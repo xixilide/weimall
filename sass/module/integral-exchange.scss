@@ -1,0 +1,14 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-integral-exchange{
+     .info{
+         padding: pxTorem(60) 0 pxTorem(40) 0;
+         .img{
+             width: pxTorem(88);
+             height: pxTorem(90);
+         }
+     }
+}

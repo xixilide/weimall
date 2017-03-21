@@ -1,0 +1,17 @@
+{
+  "name": "yystore",
+  "version": "1.0.0",
+  "description": "微商城 webapp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": "briefy",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "sass-lint": "^1.9.1"
+  }
+}

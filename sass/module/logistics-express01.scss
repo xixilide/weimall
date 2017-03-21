@@ -1,0 +1,25 @@
+@import "../public/var.scss";
+.#{$fnt}-logistics-express01{
+  border-bottom: nth($gray,5);
+  width:100%;
+  background: $white;
+  .content-box{
+    padding:pxTorem(40) pxTorem(20);
+    .content{
+      margin-bottom: pxTorem(20);
+      font-size:pxTorem(28);
+      .name{
+        color:$black0;
+      }
+      .val{
+        color:nth($gray,1);
+      }
+      .val.c-green{
+        color:nth($green,3);
+      }
+    }
+    .content.last{
+      margin-bottom: 0;
+    }
+  }
+}

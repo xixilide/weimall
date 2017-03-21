@@ -1,0 +1,63 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+//信息弹出模块
+.#{$fnt}-slide-news-tc{
+  z-index: 99;
+  width:pxTorem(220);
+  border-radius: pxTorem(6);
+  border:1px solid nth($gray,5);
+  background: $white;
+    .sj:after {
+      content: " ";
+      position: absolute;
+      top:-(pxTorem(20));
+      right:pxTorem(16);
+      width: 18px;
+      height: 18px;
+      border-top:1px solid nth($gray,5);
+      border-right: 1px solid nth($gray,5);
+      border-left: 0;
+      border-bottom: 1px solid $white;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      z-index: 99;
+      background: $white;
+    }
+    .news-box{
+      padding:0 pxTorem(10);
+      .news-item.last{
+        border-bottom: 0;
+      }
+    .news-item{
+      border-bottom: 1px solid nth($gray,5);
+      height:pxTorem(96);
+      text-align: center;
+      line-height: pxTorem(96);
+      .img{
+        width:pxTorem(36);
+        height:pxTorem(36);
+        vertical-align: middle;
+        margin-right:pxTorem(36);
+      }
+      .title{
+        font-size:pxTorem(26);
+        color:nth($gray,1);
+        vertical-align: middle;
+      }
+    }
+  }
+}
+//套餐列表页
+.#{$fnt}-slide-news-tc.news-tc-lby{position: absolute;top:pxTorem(80);right:pxTorem(6);}
+
+//详情页
+.#{$fnt}-slide-news-tc.news-tc-xqy{position: absolute;top:pxTorem(80);right:pxTorem(-14);}
+
+//遮罩框架
+.#{$fnt}-slide-news-tc-k{position:fixed;width: 100%;height: 100%;z-index:9999;left: 0;top:0;}
+

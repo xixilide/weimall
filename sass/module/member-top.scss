@@ -1,0 +1,51 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-member-top{
+    padding: pxTorem(20);
+    background-color:nth($red,5);
+    color: $white;
+    .img{
+        width: pxTorem(106);
+        height: pxTorem(106);
+        @include border-radius(50%);
+    }
+    .mem-id{
+        color: $white;
+        font-size: pxTorem(26);
+    }
+    .mem-set{
+        position: relative;
+        display: inline-block;
+        width: pxTorem(40);
+        height: pxTorem(40);
+        background:url(../../images/icon/i-member-1.png) no-repeat center;
+        background-size: pxTorem(38)  pxTorem(36) ;
+    }
+    .mem-chat{
+         position: relative;
+        display: inline-block;
+        width: pxTorem(38);
+        height: pxTorem(38);
+        background:url(../../images/icon/i-member-2.png) no-repeat top;
+        background-size: pxTorem(36)  pxTorem(36) ;
+    }
+   .mem-more{
+        display: inline-block;
+        width: pxTorem(16);
+        height: pxTorem(24);
+        background:url(../../images/icon/i-member-3.png) no-repeat center right;
+        background-size: pxTorem(13)  pxTorem(22) ;
+        vertical-align: middle;
+    }
+    .mem-add{
+        color: $white;
+        font-size: pxTorem(22);
+        vertical-align: middle;
+    }
+}
+
+
+

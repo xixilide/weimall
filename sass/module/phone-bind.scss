@@ -1,0 +1,20 @@
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-phone-bind{
+    .img-phone{
+        width: pxTorem(74);
+        height:pxTorem(90);
+        margin-top: pxTorem(86);
+    }
+    .img-password{
+        width: pxTorem(79);
+        height:pxTorem(90);
+        margin-top: pxTorem(86);
+    }
+    .tip{
+        margin: pxTorem(30) 0  pxTorem(60) 0;
+        font-size: pxTorem(22);
+        color: nth($gray,1);
+    }
+}

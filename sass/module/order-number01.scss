@@ -1,0 +1,131 @@
+﻿@import "../public/var.scss";
+/*订单编号模块*/
+.#{$fnt}-order-number01.mt20{
+  margin-top:pxTorem(20);
+}
+.#{$fnt}-order-number01{
+  margin-top:pxTorem(10);
+  width:100%;
+  .item{
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    margin-bottom:pxTorem(10);
+    background: $white;
+    .title{
+      padding:0 pxTorem(20);
+      height:pxTorem(65);
+      line-height: pxTorem(65);
+      .name,.val{
+        color:$black0;
+        font-size:pxTorem(24);
+      }
+      .mark-txt{
+        float: right;
+        color:nth($red,3);
+        font-size:pxTorem(24);
+      }
+    }
+    .product-infor-box{
+      margin-bottom: pxTorem(10);
+      padding:pxTorem(10) pxTorem(20);
+      background:nth($gray,9);
+      .img-box{
+        float: left;
+        width:pxTorem(140);
+        height:pxTorem(140);
+        text-align: center;
+        line-height: pxTorem(140);
+        background:$white;
+        img{
+          width:pxTorem(140);
+          height:pxTorem(140);
+          vertical-align: middle;
+        }
+      }
+      .content-txt{
+        margin-left:pxTorem(150);
+        .product-title.mt20{
+          margin-top:pxTorem(20);
+        }
+        .product-title{
+          padding-right:pxTorem(40);
+          color:$black0;
+          font-size:pxTorem(24);
+          word-break: break-all;
+          text-overflow: ellipsis;
+          display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+          -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+          -webkit-line-clamp: 2; /** 显示的行数 **/
+          overflow: hidden;  /** 隐藏超出的内容 **/
+        }
+        .price-box{
+          margin-top:pxTorem(10);
+          .price{
+            color:nth($red,3);
+            font-size:pxTorem(26);
+          }
+          .amount{
+            float: right;
+            color:$gray0;
+            font-size:pxTorem(24);
+            .shu{
+              padding-left:pxTorem(5);
+            }
+          }
+        }
+        .need-integral-box{
+          margin-top:pxTorem(16);
+          .z-txt{
+            color:$gray0;
+            font-size:pxTorem(22);
+          }
+          .z-number{
+            color:nth($red,3);
+            font-size:pxTorem(32);
+            padding-left:pxTorem(10);
+          }
+        }
+      }
+    }
+    .need-integral{
+      margin-top:pxTorem(20);
+      border-top: 1px solid nth($gray,8);
+      height:pxTorem(65);
+      line-height: pxTorem(65);
+      .integral-box{
+        padding:0 pxTorem(20);
+        height:pxTorem(65);
+        line-height: pxTorem(65);
+        float:right;
+        .number{
+          float: right;
+          font-size:pxTorem(30);
+          color:nth($red,3);
+          .integral{
+            font-size:pxTorem(24);
+            color:nth($gray,1);
+            padding-right:pxTorem(20);
+          }
+        }
+        .details-btn{
+          float: right;
+          width:pxTorem(135);
+          height:pxTorem(50);
+          line-height: pxTorem(50);
+          text-align: center;
+          color:nth($red,4);
+          font-size:pxTorem(24);
+          border:1px solid nth($red,4);
+          border-radius: pxTorem(6);
+          margin-top:pxTorem(6);
+        }
+      }
+      .found-time{
+        font-size:pxTorem(22);
+        color:$gray0;
+        display: inline-block;
+      }
+    }
+  }
+}
+/*订单编号模块--end--*/

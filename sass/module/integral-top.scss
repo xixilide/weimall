@@ -1,0 +1,42 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-integral-top{
+    background: nth($red,5);
+    height: pxTorem(250);
+    padding:pxTorem(65) 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: $white;
+    .integral,.detail{
+       width: 50%; 
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+    }
+    .integral{
+        float: left;
+        height: pxTorem(120);
+        border-right: 1px solid $white;
+        .pos{
+           margin-left:pxTorem(110);
+        }
+       .score{
+           font-size:pxTorem(72);
+       }
+    }
+    .detail{
+        float: right;
+        padding-left: pxTorem(110);
+       .icon-score{
+            display: inline-block;
+            width: pxTorem(62);
+            height: pxTorem(62);
+            background: url(../../images/icon/score.png) no-repeat;
+            background-size: pxTorem(62) pxTorem(62);
+        }
+    }
+}

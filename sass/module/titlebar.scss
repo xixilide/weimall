@@ -1,0 +1,14 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-titlebar-box{height:pxTorem(60) ;padding: 0 pxTorem(20) ;background:nth($gray,8);line-height: pxTorem(60);
+
+  .title{float: left;height: pxTorem(24);margin-top: pxTorem(4);}
+  .title .img{width: pxTorem(128);height: pxTorem(24);}
+  .describe{float: right; font-size: pxTorem(22);}
+  .describe .img{max-width: pxTorem(26) ; vertical-align: middle;}
+
+}

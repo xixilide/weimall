@@ -1,0 +1,11 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-integral-score{
+    padding: 0 pxTorem(20);
+    background: $white;
+    height: pxTorem(100);
+    line-height: pxTorem(100);
+}

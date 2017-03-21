@@ -1,0 +1,119 @@
+@import "../public/var.scss";
+/*购物车商品列表模块*/
+.#{$fnt}-edit-product01{
+  padding-top: pxTorem(10);
+  width:100%;
+  .selected{
+    -webkit-transform: translate(-(pxTorem(120)),0);
+    transform:translate(-(pxTorem(120)),0);
+    .img-box{
+      display: none;
+    }
+    .product-box{
+      .product-info-box{
+        margin-left:pxTorem(110);
+      }
+    }
+  }
+  ul{
+    overflow: hidden;
+  }
+  .shop-product-item{
+    height:pxTorem(210);
+    margin-top:pxTorem(10);
+    background: $white;
+    transition:all 0.05s ease-out;
+    -webkit-transition:all 0.05s ease-out;
+  }
+  .product-info-box{
+    margin-left:pxTorem(190);
+    height:pxTorem(170);
+    .product-title{
+      font-size:pxTorem(26);
+      color:$black0;
+      padding-top:pxTorem(22);
+      height:pxTorem(64);
+      line-height: pxTorem(32);
+      word-break: break-all;
+      text-overflow: ellipsis;
+      display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+      -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+      -webkit-line-clamp: 2; /** 显示的行数 **/
+      overflow: hidden;  /** 隐藏超出的内容 **/
+    }
+    .tr{
+      margin-top:pxTorem(20);
+      text-align: right;
+      height:pxTorem(20);
+      line-height:pxTorem(20);
+      img{
+        width:pxTorem(30);
+        height:pxTorem(20);
+      }
+    }
+    .product-price-box.udm-mt40{
+      margin-top:pxTorem(40);
+    }
+    .product-price-box{
+      margin-top:pxTorem(10);
+      .product-price{
+        color:nth($red,3);
+        font-size:pxTorem(24);
+        .price{
+          font-size:pxTorem(30);
+        }
+      }
+    }
+  }
+  .product-box{
+    margin:0 0 0 pxTorem(54);
+    padding:pxTorem(20) pxTorem(20) pxTorem(20) 0;
+    height:pxTorem(170);
+    .img-box{
+      position: relative;
+      float: left;
+      width:pxTorem(170);
+      border:1px solid nth($gray,5);
+      img{
+        width:inherit;height: inherit;
+      }
+      .s-wh{position:absolute;bottom: 0;left:0;width: 100%;display: inline-block;text-align: center;
+        background-color:$black0;color:$white;
+        height: pxTorem(46);line-height: pxTorem(46);font-size: pxTorem(24);
+        opacity:0.8;-webkit-filter:opacity(.8);filter:alpha(opacity=80);}
+    }
+  }
+  .shop-product-box{
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    position: relative;
+    background: $white;
+    padding-left:pxTorem(20);
+    .radio-box{
+      padding:pxTorem(20) 0 pxTorem(20) 0;
+      height:pxTorem(170);
+      line-height: pxTorem(170);
+      float: left;
+      .radio{
+        width:pxTorem(34);
+        height:pxTorem(34);
+        vertical-align: middle;
+      }
+    }
+    .delete-btn{
+      position: absolute;
+      top:0;
+      right:-(pxTorem(120));
+      height:pxTorem(210);
+      width:pxTorem(120);
+      line-height: pxTorem(210);
+      text-align: center;
+      color:$white;
+      font-size:pxTorem(28);
+      background:nth($red,4);
+    }
+  }
+
+}
+
+/*购物车商品列表模块--end--*/

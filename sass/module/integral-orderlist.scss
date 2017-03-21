@@ -1,0 +1,62 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-integral-orderlist{
+    width: 100%;
+    margin-bottom: pxTorem(10);
+    background: $white;
+    &:first-child{
+      margin-top: pxTorem(20);  
+    }
+    .list-header{
+       padding:0 pxTorem(20);
+       line-height: pxTorem(65); 
+       text-align: left;
+    }
+    .content{
+        position: relative;
+        margin-bottom: pxTorem(10);
+        padding:pxTorem(30) pxTorem(20);
+        background: nth($gray,7);
+        .list-img{
+            width: pxTorem(140);
+            height: pxTorem(140);
+        }
+        .list-detail{
+            float: left;
+            width: 56%;
+            line-height:pxTorem(34);
+            .list-title{
+                margin-top: pxTorem(20);
+                height: pxTorem(68);
+                overflow: hidden;
+            }
+        }
+        .price{
+            position: absolute;
+            right: pxTorem(20);
+            bottom: pxTorem(50);
+            text-align: right;
+            line-height:pxTorem(38) ;
+        }
+
+    }
+    .give{
+        position: relative;
+        background: $white;
+        padding:0 pxTorem(20);
+        border-top:1px solid nth($gray,5);
+        line-height: pxTorem(100);
+    }
+    .udm-textarea-nb{
+        width:pxTorem(600);
+        resize : none;
+    }
+    .udm-textarea01-k{width:86%;}
+    .bz-textarea01{
+        vertical-align: inherit;
+        width:90%;padding:0 pxTorem(10);
+        line-height: 150%;
+        resize : none;}
+}

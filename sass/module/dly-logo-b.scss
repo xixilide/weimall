@@ -1,0 +1,17 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-dly-logo-b{
+width: pxTorem(150);height: pxTorem(150);margin:pxTorem(56) auto;text-align: center;
+background-color: nth($red,3);border-radius: pxTorem(24);
+  img.i-logo{width:pxTorem(100);height: pxTorem(66);margin-top:pxTorem(42);}
+
+}
+/*自定义logo*/
+.#{$fnt}-dly-logo2-b{
+  width:100%;text-align: center;
+  img.i-logo{width:pxTorem(150);height: pxTorem(150);margin:pxTorem(56) auto;}
+}
+

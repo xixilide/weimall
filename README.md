@@ -1,0 +1,88 @@
+#**第一步:** 
+    安装nodejs
+#**第二部**
+    输入：npm install 
+#**第三部**
+    npm run dev
+***
+***
+
+
+
+
+
+gem install sass  安装sass
+
+自动编译所有的sass文件，生成压缩格式css文件，不生成map文件
+sass --style compressed --sourcemap=none --watch . 
+
+sass --watch style.scss:style.css  自动编译单个文件
+
+
+SASS提供四个编译风格的选项：
+* nested：嵌套缩进的css代码，它是默认值。
+* expanded：没有缩进的、扩展的css代码。
+* compact：简洁格式的css代码。
+* compressed：压缩后的css代码。
+
+生产环境当中，一般使用最后一个选项。
+sass --style compressed test.sass test.css
+
+
+你也可以让SASS监听某个文件或目录，一旦源文件有变动，就自动生成编译后的版本。
+// watch a file
+sass --watch input.scss:output.css
+
+// watch a directory监听文件夹sass文件变动
+sass --watch app/sass:public/stylesheets
+
+
+如果变量需要镶嵌在字符串之中，就必须需要写在#{}之中。
+$side : left;
+　.rounded {
+     border-#{$side}-radius: 5px;
+     }
+
+SASS允许在代码中使用算式：
+body {
+　　　　margin: (14px/2);
+　　　　top: 50px + 100px;
+　　　　right: $var * 10%;
+　　}
+
+在嵌套的代码块内，可以使用$引用父元素。比如a:hover伪类，可以写成：
+a {
+　　　　&:hover { color: #ffb3ff; }
+　　}
+
+class2要继承class1，就要使用@extend命令：
+.class2 {
+　　　　@extend .class1;
+　　　　font-size:120%;
+　　}
+
+
+使用@mixin命令，定义一个代码块。
+@mixin left {
+　　　　float: left;
+　　　　margin-left: 10px;
+　　}
+使用@include命令，调用这个mixin。
+div {
+　　　　@include left;
+　　}
+
+
+
+SASS提供了一些内置的颜色函数，以便生成系列颜色。
+lighten(#cc3, 10%) // #d6d65c
+darken(#cc3, 10%) // #a3a329
+grayscale(#cc3) // #808080
+complement(#cc3) // #33c
+
+插入文件
+@import命令，用来插入外部文件。
+@import "path/filename.scss";
+
+如果插入的是.css文件，则等同于css的import命令。
+@import "foo.css";

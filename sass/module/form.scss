@@ -1,0 +1,33 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+/****textarea样式****/
+.#{$fnt}-textarea-nb{
+    font-family: 'Microsoft YaHei',"微软雅黑","sans-serif";
+    border: none;
+    color: nth($gray,3);
+    vertical-align:text-top;
+    line-height: pxTorem(32);
+ }
+.#{$fnt}-textarea-nb.resize-n{ resize: none;}//不允许拖动
+.#{$fnt}-textarea-nb.resize-h{ resize: horizontal;}//水平允许拖动
+.#{$fnt}-textarea-nb.resize-v{resize: vertical;}//垂直允许拖动
+.#{$fnt}-textarea-nb:focus,.#{$fnt}-textarea-nb:hover,.#{$fnt}-textarea-nb:active{
+    outline: none;
+}
+
+/****textarea样式end****/
+
+/****input样式开始****/
+.#{$fnt}-remark{
+    height:pxTorem(60);
+    line-height: pxTorem(60);
+    padding-left:pxTorem(20);
+    border-radius: pxTorem(6);
+    color:nth($gray,3);
+    font-size:pxTorem(26);
+    background: nth($gray,8);
+  }
+/****input样式end****/          

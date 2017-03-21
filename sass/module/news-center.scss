@@ -1,0 +1,97 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-news-center{
+    padding:pxTorem(20) 0 pxTorem(20) pxTorem(20);
+    overflow: hidden;
+    .news-item.selected{
+        -webkit-transform: translate(-(pxTorem(82)),0);
+        transform:translate(-(pxTorem(82)),0);
+    }
+   .news-item{
+      // overflow: hidden;
+       position: relative;
+       height:pxTorem(90);
+       margin-bottom: pxTorem(20);
+       transition:all 0.05s ease-out;
+       -webkit-transition:all 0.05s ease-out;
+       .iconbox{
+           position: absolute;
+           left: 0;
+           right: 0;
+       }
+       .icon{
+           position: relative;
+           display: inline-block;
+           width: pxTorem(60);
+           height: pxTorem(60);
+       }
+       .tip{
+           position: absolute;
+           z-index: 9;
+           top: pxTorem(-2);
+           right:pxTorem(-6);;
+           width: pxTorem(12);
+           height: pxTorem(12);
+           border: 2px solid $white;
+           background: nth($red,4);
+           @include border-radius(50%);
+       }
+       .icon-1{
+           background: url(../../images/icon/i-news-01.png) no-repeat;
+           background-size:pxTorem(60) pxTorem(60);
+       }
+       .icon-2{
+           background: url(../../images/icon/i-news-02.png) no-repeat;
+           background-size:pxTorem(60) pxTorem(60); 
+       }
+       .icon-3{
+           background: url(../../images/icon/i-news-03.png) no-repeat;
+           background-size:pxTorem(60) pxTorem(60); 
+       }
+       .icon-4{
+           background: url(../../images/icon/i-news-04.png) no-repeat;
+           background-size:pxTorem(60) pxTorem(60); 
+       }
+       .icon-all{
+           background: url(../../images/icon/i-news-all.png) no-repeat;
+           background-size:pxTorem(60) pxTorem(60);
+       }
+       .content{
+           width:100%;
+           margin-left: pxTorem(80);
+           padding-right: pxTorem(100);
+           box-sizing: border-box;
+           -moz-box-sizing: border-box;
+           -webkit-box-sizing: border-box;
+           border-bottom: 1px solid nth($gray,8);
+           .title{
+               font-size: pxTorem(28);
+           }
+           .text{
+               padding: pxTorem(4) 0 pxTorem(16) 0;
+               font-size: pxTorem(24);
+               color: nth($gray,3);
+           }
+           .time{
+               float: right;
+               font-size: pxTorem(20);
+               color: nth($gray,4);
+           }
+       }
+       .delete-btn{
+           position: absolute;
+           top:0;
+           right:-(pxTorem(82));
+           width:pxTorem(80);
+           height:pxTorem(80);
+           font-size:pxTorem(26);
+           text-align:center;
+           background: nth($red,4);
+           color:$white;
+           line-height: pxTorem(80);
+
+       }
+   }
+}

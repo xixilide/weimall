@@ -1,0 +1,15 @@
+@import "../public/var.scss";
+/*申请售后按钮模块*/
+.#{$fnt}-apply-btn01{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100%;
+  height:pxTorem(90);
+  text-align: center;
+  line-height: pxTorem(90);
+  font-size:pxTorem(32);
+  color:$white;
+  background: nth($red,3);
+}
+/*申请售后按钮模块--end--*/

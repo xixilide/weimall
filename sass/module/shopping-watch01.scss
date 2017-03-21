@@ -1,0 +1,37 @@
+@import "../public/var.scss";
+/*购物车 去逛逛模块*/
+.#{$fnt}-shopping-watch01{
+  width:100%;
+  .img-box{
+    padding-top:pxTorem(100);
+    text-align: center;
+    img{
+      width:pxTorem(104);
+      height:pxTorem(138);
+    }
+    img.no-info-icon{
+      width:pxTorem(114);
+      height:pxTorem(118);
+    }
+  }
+  .dec-txt{
+    font-size:pxTorem(22);
+    color:nth($gray,1);
+    text-align: center;
+    margin-top:pxTorem(20);
+  }
+  .btn-box{
+    padding:pxTorem(60) 0 pxTorem(30) 0;
+    text-align: center;
+    .watch-btn{
+      display: inline-block;
+      width:pxTorem(200);
+      height:pxTorem(50);
+      line-height: pxTorem(50);
+      border-radius: pxTorem(6);
+      color:$white;
+      background: nth($red,4);
+    }
+  }
+}
+/*购物车 去逛逛模块--end--*/

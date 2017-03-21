@@ -1,0 +1,72 @@
+//公共变量模块
+@import "../public/var.scss";
+.udm_page{
+    width: 100%;
+    margin: 0 auto;
+}
+.udm-te{
+    color: #fff;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: .8rem;
+    font-size: 0.5rem;
+}
+.mem-num1{
+  font-size: 1.6rem;
+  color: #fff;
+  padding-left: 1rem;
+}
+.udm-order-tit{
+  line-height: 2.2rem;
+  border-bottom: .04rem solid #ebebeb;
+  padding-left: .66rem;
+}
+.udm-orderlist{
+  width: 100%;
+  height: auto;
+}
+.udm-orderlist li{
+  width: 100%;
+  height: 4rem;
+  border-bottom: .05rem solid #ebebeb;
+   list-style: none;
+   padding-top: .2rem;
+   padding-bottom: .2rem;
+}
+.order-left{
+  height: 4rem;
+  float: left;
+}
+.border-right{
+  width: 40%;
+  height: 4rem;
+  float: left;
+  text-align: right;
+
+}
+.udm-fo{
+  display: block;
+  color: #333;
+  margin-left: .66rem;
+}
+.n1{
+  // font-size: .72rem;
+}
+.n3{
+  color: #10BC23;
+  // font-size: .72rem;
+}
+.n2{
+  padding-top: 1.4rem;
+  font-size: 0.56rem;
+}
+.n4{
+  font-size: 0.5rem;
+  color: #666;
+}
+.n5{
+  font-size: .5rem;
+}
+.c-red{
+  color: #E4393C;
+}

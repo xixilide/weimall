@@ -1,0 +1,29 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-integral-address{
+    position: relative;
+    background: $white;
+    padding: pxTorem(20);
+    border-bottom: 1px solid nth($gray,5);
+    .info{
+        float: left;
+        width: pxTorem(635);
+        .address{
+            float: left;
+            width: pxTorem(590);
+            margin-left: pxTorem(10);
+            font-size: pxTorem(24);
+        }
+       
+    }
+    .info-w{
+        width: pxTorem(710);
+         .address{
+            width: pxTorem(670);
+        }
+    }
+
+}

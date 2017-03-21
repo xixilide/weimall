@@ -1,0 +1,16 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+//注册成功提示
+.#{$fnt}-dly-zccgts01-b{text-align: center;margin-top:pxTorem(140);
+
+  .ts01-img{width:pxTorem(112);height: pxTorem(112); }
+
+  .ts01-txt-b{font-size:pxTorem(24);line-height:pxTorem(40);color: nth($gray,3);margin-top:pxTorem(30);
+    .p-ts{}
+  }
+
+}
+

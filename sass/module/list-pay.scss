@@ -1,0 +1,23 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-list-pay{
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    background: $white;
+    padding: pxTorem(24) pxTorem(20);
+    .box{
+        line-height: pxTorem(36);
+    }
+    .lable{
+        font-size: pxTorem(24);
+        color: $black0;
+    }
+    .price{
+        float: right;
+        font-size: pxTorem(24);
+        color: nth($red,3);
+    }
+}

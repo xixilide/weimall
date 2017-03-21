@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html  class="udm-html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<!--WebApp全屏模式--->
+
+	<script>
+
+		//window.devicePixelRatio=1;
+		//alert(devicePixelRatio);
+		//metaE.setAttribute('name', 'viewport');
+		//metaE.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+
+
+		//var metaE = document.createElement('meta');
+		var dpr,scale;
+			scale = 1/window.devicePixelRatio;//设备物理像素比例
+			//document.write('<meta name="viewport" content="width=device-width,initial-scale='+scale+', minimum-scale='+scale+',maximum-scale='+scale+', user-scalable=no,minimal-ui">');
+
+		/*if (!dpr ) {
+			var isAndroid = win.navigator.appVersion.match(/android/gi);
+			var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+			var devicePixelRatio = win.devicePixelRatio;
+			if (isIPhone) {
+				// iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+				if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+					dpr = 3;
+				} else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+					dpr = 2;
+				} else {
+					dpr = 1;
+				}
+			} else {
+				// 其他设备下，仍旧使用1倍的方案
+				dpr = 1;
+			}
+			scale = 1 / dpr;
+
+
+		}
+
+		var docEl = document.getElementsByClassName('docEl');
+*/
+
+
+/*
+		docEl.style.border.width = 1+'px';
+		alert(docEl.style.border.width);*/
+
+
+
+		/*metaEl = doc.createElement('meta');
+		metaEl.setAttribute('name', 'viewport');
+		metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');*/
+
+	</script>
+	<style type="text/css">
+		/* 之前说的frozenUI的圆角边框就是采用这种方式, 构建1个伪元素, 将它的长宽放大到2倍, 边框宽度设置为1px, 再以transform缩放到50%.
+
+复制代码                */
+		.udm-footer-nav01{}
+		@media screen and (-webkit-min-device-pixel-ratio: 2){
+			.udm-footer-nav01:before{
+				content: "";
+				pointer-events: none; /* 防止点击触发 */
+				box-sizing: border-box;
+				position: absolute;
+				width: 200%;
+				height: 200%;
+				left: 0;
+				top: 0;
+				-webkit-transform: scale(0.5);
+				-webkit-transform-origin:0 0;
+				transform:scale(0.5);
+				transform-origin:0 0;
+				border-top:1px solid #ddd;
+			}
+			.udm-footer-nav01{border-top: none !important;}
+		}
+		/*.border-05{border: none;}
+		.border-05:before{
+			position: absolute;
+			top:0;
+			left:0;
+			content: '';
+			z-index: -999;
+			width:200%;
+			height:200%;
+			-webkit-transform: scale(0.5);
+			-webkit-transform-origin:0 0;
+			transform:scale(0.5);
+			transform-origin:0 0;
+			border-width:1px !important;
+			border-style: solid;
+			border-color:$gray;
+		}
+		.border-05.bt-no:before{
+			border-bottom:none;
+		}*/
+
+
+	</style>
+    <title>微商城首页</title>
+    <link rel="stylesheet" href="../sass/style/udm-style.css">
+    <link rel="stylesheet" href="../ifont/i-nav/iconfont.css">
+	<script src="../script/rem-pmsp.js"></script>
+</head>
+<body class="udm-page b-color1">
+      <div class="udm-search-b-k">
+      	<!--搜索开始-->
+      	  <div class="udm-search-box "><!--添加 search-fix 类名 始终浮动在top-->
+			  <div class="search-nr">
+				  <div class="search-logo">
+					  <img class="img" src="../images/search-1.png" />
+				  </div>
+				  <div class="search-news">
+					  <i class="i-new"></i>
+					  <i class="icon"></i>
+					  <span class="text">消息</span>
+				  </div>
+				  <div class="search-content">
+					  <img class="img" src="../images/search-2.png"/>
+					  <input class="search-input" placeholder="泰国进口火龙果" />
+				  </div>
+				  <div class="udm-cl"></div>
+			  </div>
+		 </div>
+		 <!--搜索结束-->
+		<!-- 循环广告开始-->
+      	  <div class="swiper">
+                  <img src="../images/temporary/adv-1.jpg"  style="width: 100%;"/>
+      	  </div>
+      	 <!-- 循环广告结束-->
+      </div>
+      <!--套餐商品标题栏开始-->
+      <div class="udm-titlebar-box">
+      	 <div class="title">
+      	 	<img class="img" src="../images/titlebar-1.png"/>
+      	 </div>
+      	 <div class="describe">
+      	 	<span class="udm-red3">用友</span>套餐福利&nbsp;&nbsp;<span class="udm-red3">套餐</span>商品全场8.5折
+      	 	<a href="#"><img  class="img" src="../images/titlebar-3.png"/></a>
+      	 </div>
+      </div>
+      <!--套餐商品标题栏结束-->
+      <!--热销商品开始-->
+      <div class="udm-hotsell-container">
+      	  <!--第一个热销商品开始-->
+		      <div class="hotsellbox">
+		      	<div class="content">
+		      		   <img class="img"  src="../images/temporary/bar-1.jpg" />
+			      	   <div class="tip">
+			      	   	   <span class="bage-red badge-right">热销</span>
+			      	   </div>
+			      	   <div class="describe">
+			      	   	      <p class="title">用友高端奢侈品定制套餐</p>
+			      	   	      <p class="price udm-red3 ">套餐价：¥22990</p>
+			      	  </div>
+		      	</div>
+	          </div>
+	      <!--第一个热销商品结束-->
+	      <!--第二个热销商品开始-->
+		      <div class="hotsellbox">
+		      	<div class="content">
+		      		   <img class="img"  src="../images/temporary/bar-1.jpg" />
+			      	   <div class="tip">
+			      	   	   <span class="bage-red badge-right">热销</span>
+			      	   </div>
+			      	   <div class="describe">
+			      	   	      <p class="title">用友高端奢侈品定制套餐</p>
+			      	   	      <p class="price udm-red3 ">套餐价：¥22990</p>
+			      	  </div>
+		      	</div>
+	          </div>
+	      <!--第二个热销商品结束-->
+	      <!--第三个热销商品开始-->
+		      <div class="hotsellbox">
+		      	<div class="content">
+		      		   <img class="img"  src="../images/temporary/bar-1.jpg" />
+			      	   <div class="tip">
+			      	   	   <span class="bage-red badge-right">热销</span>
+			      	   </div>
+			      	   <div class="describe">
+			      	   	      <p class="title">用友高端奢侈品定制套餐</p>
+			      	   	      <p class="price udm-red3 ">套餐价：¥22990</p>
+			      	  </div>
+		      	</div>
+	          </div>
+	      <!--第三个热销商品结束-->
+
+      </div>
+      <!--热销商品结束-->
+      <!--推荐商品标题栏开始-->
+      <div class="udm-titlebar-box">
+      	 <div class="title">
+      	 	<img class="img" src="../images/titlebar-2.png"/>
+      	 </div>
+      	 <div class="describe">
+      	 	<span class="udm-red3">用友</span>精选好货&nbsp;&nbsp;<span class="udm-red3">热卖</span>商品推荐
+      	 	<a href="#"><img  class="img" src="../images/titlebar-3.png"/></a>
+      	 </div>
+      </div>
+      <!--推荐商品标题栏结束-->
+      <!--推荐产品开始-->
+      <div class="udm-re-product">
+      	  <ul class="box">
+      	  	 <li class="item">
+      	  	 	<div class="img-box">
+      	  	 		<img class="img" src="../images/temporary/p-1.jpg"/>
+      	  	 	</div>
+      	  	 	<div class="describe">
+      	  	 		<p class="title">小米电视3S43英寸小尺寸高端旗舰43英寸原装 LG/友达</p>
+      	  	 		<p class="udm-red3">
+      	  	 			<span class="rmb">￥</span><span class="price">1799.</span><span class="rmb">00</span>
+      	  	 		</p>
+      	  	 	</div>
+      	  	 </li>
+      	  	 <li class="item">
+      	  	 	<div class="img-box">
+      	  	 		<img class="img" src="../images/temporary/p-1.jpg"/>
+      	  	 	</div>
+      	  	 	<div class="describe">
+      	  	 		<p class="title">小米电视3S43英寸小尺寸高端旗舰43英寸原装 LG/友达</p>
+      	  	 		<p class="udm-red3">
+      	  	 			<span class="rmb">￥</span><span class="price">1799.</span><span class="rmb">00</span>
+      	  	 		</p>
+      	  	 	</div>
+      	  	 </li>
+      	  	 <li class="item">
+      	  	 	<div class="img-box">
+      	  	 		<img class="img" src="../images/temporary/p-2.jpg"/>
+      	  	 	</div>
+      	  	 	<div class="describe">
+      	  	 		<p class="title">小米电视3S43英寸小尺寸高端旗舰43英寸原装 LG/友达</p>
+      	  	 		<p class="udm-red3">
+      	  	 			<span class="rmb">￥</span><span class="price">1799.</span><span class="rmb">00</span>
+      	  	 		</p>
+      	  	 	</div>
+      	  	 </li>
+      	  	 <li class="item">
+      	  	 	<div class="img-box">
+      	  	 		<img class="img" src="../images/temporary/p-2.jpg"/>
+      	  	 	</div>
+      	  	 	<div class="describe">
+      	  	 		<p class="title">小米电视3S43英寸小尺寸高端旗舰43英寸原装 LG/友达</p>
+      	  	 		<p class="udm-red3">
+      	  	 			<span class="rmb">￥</span><span class="price">1799.</span><span class="rmb">00</span>
+      	  	 		</p>
+      	  	 	</div>
+      	  	 </li>
+
+      	  	 <div class="udm-cl"></div>
+      	  </ul>
+      </div>
+      <!--推荐产品结束-->
+      <!-- 底部开始-->
+	  <div class="udm-footer-nav01-k"></div>
+	  <div class="udm-footer-nav01" style="">
+	        <ul class="ul1-k">
+	            <li class="li-k li-kf active">
+	                <a class="nav-btn"><i class="i-icon iconfont wsc-i-shouye"></i>首页</a>
+	            </li>
+	            <li class="li-k li-k2 ">
+	                <a class="nav-btn"><i class="i-icon iconfont wsc-i-fenlei"></i>分类</a>
+	            </li>
+	            <li class="li-k li-k3 ">
+	                <a class="nav-btn">
+						<!--购物车数量模块-->
+						<i class="i-icon iconfont wsc-i-gouwuche udm-gw-num01">
+							<span class="gw-num show">2</span>
+						</i>
+						<!--购物车数量模块--end-->
+						购物车
+					</a>
+	            </li>
+	            <li class="li-k li-end  ">
+	                <a class="nav-btn"><i class="i-icon iconfont wsc-i-wode"></i>我的</a>
+	            </li>
+	
+	        </ul>
+	  </div>
+    <!--底部结束-->
+
+  </body>
+</html>

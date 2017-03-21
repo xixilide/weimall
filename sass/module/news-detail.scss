@@ -1,0 +1,27 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-news-detail{
+  background:$white ;
+  padding: 0 pxTorem(20);
+  .time{
+      height: pxTorem(60);
+      line-height: pxTorem(60);
+      color: nth($gray,4);
+      font-size: pxTorem(22);
+      border-bottom: 1px solid nth($gray,8);
+  }
+  .content{
+      .title{
+          font-size: pxTorem(26);
+          padding: pxTorem(20) 0;
+      }
+      .des{
+          padding-bottom: pxTorem(30);
+          font-size: pxTorem(24);
+          line-height: pxTorem(36);
+          color: nth($gray,3);
+      }
+  }
+}

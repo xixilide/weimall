@@ -1,0 +1,24 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-type-third{
+    overflow-x: hidden;
+   .#{$fnt}-p-third{
+        position:fixed;
+        left:25%;
+        top:pxTorem(90);
+        bottom:pxTorem(92);
+        z-index:999;
+        width: 75%;
+        margin:0 pxTorem(-10) 0 pxTorem(8);
+        overflow-x: hidden;
+        .udm-p-type{
+                        .p-list{width:100%;margin-left: -1%;
+                                .item{width:32%;margin:0 0 6% 1%;}  
+                        }
+        }
+        
+    }
+}

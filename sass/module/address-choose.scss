@@ -1,0 +1,54 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-address-choose{
+    background: $white;
+    .list{
+        .item{
+            padding:pxTorem(30) pxTorem(20);
+            border-bottom: 1px solid nth($gray,8); 
+            .phone{
+                font-size: pxTorem(30);
+                color: $black0;
+            } 
+            .info{
+                margin-top: pxTorem(16);
+                .address{
+                    overflow: hidden;
+                    color: nth($gray,1);
+                    font-size: pxTorem(24);
+                }
+                .address.default{
+                     margin-left: pxTorem(135);
+                }
+            }
+        }
+       .item.choose{
+           &:after{
+              content: ".";
+              display: block;
+              height: 0;
+              clear: both;
+              visibility: hidden;
+           }
+           .icon-box{
+               float: left;
+               margin: pxTorem(22) 0 0 0;
+               .icon{
+                   display: block;
+                   width: pxTorem(64);
+                   height: pxTorem(44);
+                   background: url(../../images/icon/ad-01.png) no-repeat;
+                   background-size: pxTorem(64)  pxTorem(44) ;
+               }
+           }
+           .info{margin-top: 0;}
+           .content{
+              margin-left: pxTorem(135);
+           }
+       }
+    }
+}
+/*地址弹出模块--end--*/

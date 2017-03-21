@@ -1,0 +1,19 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-p-spec{
+    .spec-title{position:relative;margin: pxTorem(30) 0 pxTorem(50) 0;border-top: 1px solid nth($gray,5);
+               .text{
+                   position:absolute;
+                   top:pxTorem(-20);
+                   left: 50%;
+                   margin-left: pxTorem(-84);
+                   display: inline-block;
+                   background: #fff;
+                   width: pxTorem(168); 
+                   text-align: center;
+                   }
+    }
+}

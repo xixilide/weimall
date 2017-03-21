@@ -1,0 +1,27 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-p-type{background: #fff;
+     .b-type{
+         color: $black0;font-weight: bold;font-size: pxTorem(24);text-align: center;
+         }
+      .p-box{}
+     .p-list{
+         width: 100%;
+         margin-top: pxTorem(20);
+         margin-left: -1%;
+        .item{
+             float: left;
+             width: 24%;
+             text-align: center;
+             margin:0 0 4% 1%;
+            .img-phone{ width: pxTorem(130);height:  pxTorem(130);}
+            .title{font-size:  pxTorem(22);text-align: center;margin-top: pxTorem(10);color: nth($gray,1);}
+          a{display:block;  }
+         }
+     }
+         
+}
+

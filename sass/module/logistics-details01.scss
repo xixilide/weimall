@@ -1,0 +1,87 @@
+@import "../public/var.scss";
+/*物流详情模块*/
+.#{$fnt}-logistics-details01{
+  width:100%;
+  margin-top:pxTorem(10);
+  padding-bottom: pxTorem(20);
+  background: $white;
+  .header-txt{
+    padding-left:pxTorem(20);
+    height:pxTorem(100);
+    line-height: pxTorem(100);
+    color:$black0;
+    font-size:pxTorem(28);
+    border-bottom: 1px solid nth($gray,8);
+  }
+  .details-content{
+    padding:pxTorem(40) pxTorem(20) 0 pxTorem(60);
+    .item{
+      position: relative;
+      border-left:pxTorem(2) solid nth($gray,4);
+      .circle-icon{
+        position: absolute;
+        top:0;
+        left:-(pxTorem(9));
+        width:pxTorem(18);
+        height:pxTorem(18);
+        background: url("../../images/icon/circle-icon01.png") no-repeat;
+        background-size: pxTorem(18) pxTorem(18);
+      }
+      .circle-icon.over{
+        left:-(pxTorem(10));
+        top:-(pxTorem(4));
+        width:pxTorem(20);
+        height:pxTorem(20);
+        background: url("../../images/icon/circle-icon02.png") no-repeat;
+        background-size: pxTorem(20) pxTorem(20);
+      }
+      .content-box{
+        padding-bottom: pxTorem(30);
+        .content{
+          padding-bottom:pxTorem(30);
+          margin-left:pxTorem(40);
+          border-bottom: 1px solid nth($gray,8);
+          .address-time-box{
+            .address-box{
+              display: inline-block;
+              color:nth($gray,1);
+              font-size:pxTorem(26);
+              margin-right:pxTorem(30);
+              .address{
+                display: inline-block;
+                padding-right:pxTorem(10);
+                border-right:1px solid nth($gray,1);
+              }
+            }
+            .time-box{
+              display: inline-block;
+              color:nth($gray,3);
+              font-size:pxTorem(24);
+            }
+          }
+          .infor-txt{
+            margin-top:pxTorem(20);
+            color:$gray0;
+            font-size:pxTorem(24);
+            line-height: pxTorem(30);
+          }
+          .infor-txt.over{
+            color:nth($green,3);
+          }
+        }
+      }
+    }
+  }
+  .store-send{
+      .item{
+          border-left: none;
+          .circle-icon.over{
+              top:pxTorem(8);
+          }
+          .content-box .content{
+              border-bottom: none;
+          }
+      }
+  }
+}
+/*物流详情模块--end--*/

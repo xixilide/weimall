@@ -1,0 +1,27 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-alert-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+}
+.#{$fnt}-all-order{
+     padding: pxTorem(40) pxTorem(30) pxTorem(10) pxTorem(30);
+     .date-list{
+         width: 100%;
+     }
+    .item{
+        float: left;
+        margin-bottom: pxTorem(30);
+        width: 33.3333%;
+        text-align: center;
+     }
+   
+}
+.#{$fnt}-alert-nohead{
+    top: pxTorem(91) !important;
+}

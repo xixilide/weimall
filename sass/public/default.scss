@@ -1,0 +1,26 @@
+//默认样式
+@import "var";
+//编写样式请加前缀 #{$fnt}
+/*reset 重置默认样式*/
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, q, em, ul, li, ol, form,
+article, aside, embed, dl, dt, dd, table, td, th, input, button, legend, blockquote,
+textarea, label, strong, img, fieldset
+{ margin: 0; padding: 0;}
+body{font-family:'Microsoft YaHei',"sans-serif",Arial,'Hiragino Sans GB','Open Sans','Helvetica Neue';
+  color:$black0;}
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+ul, li { list-style-type: none; }
+a {color:#333; outline: medium none; text-decoration: none;cursor: pointer;}
+img,input,select,option,th,td,textarea{font-family:'Microsoft YaHei',"sans-serif",Arial,'Hiragino Sans GB','Open Sans','Helvetica Neue';border:none;color:#333;}
+input{outline: none;}
+a:hover { text-decoration:none; }
+table {border-collapse: collapse; }
+em, cite, b, i { font-style: normal; }
+button{border: none;width: 100%;font-family:'Microsoft YaHei',"sans-serif",Arial,'Hiragino Sans GB','Open Sans','Helvetica Neue';}
+button:hover{outline: none;}
+//rem适配px
+.#{$fnt}-html{font-size:#{$browser-default-font-size}px;}
+//body默认属性
+.#{$fnt}-page{width: 100%;margin:0 auto;font-size:pxTorem(16);}
+.#{$fnt}-page.b-color1{background-color:nth($gray,8);}
+/*reset 重置默认样式 end*/

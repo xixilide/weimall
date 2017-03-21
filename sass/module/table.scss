@@ -1,0 +1,18 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.table-line{
+    width: 100%;
+    border: 1px solid nth($gray,6);
+    border-top: none;
+    border-left:none;
+    line-height: pxTorem(62);
+    text-align: left;
+    td{
+        padding: 0 pxTorem(16);
+        border-top: 1px solid nth($gray,6);
+        border-left: 1px solid nth($gray,6);
+    }
+}
+

@@ -1,0 +1,25 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-pay-way{
+    border-top:1px solid nth($gray,5);
+    background: $white;
+    .item{
+        padding: 0 pxTorem(20);
+        height:pxTorem(80) ;
+        line-height:pxTorem(80) ;
+        border-bottom:1px solid nth($gray,5);
+        .lable{
+            float: left;
+            font-size: pxTorem(28);
+            color: $black0;
+        }
+        .tip{
+            float: right;
+            font-size: pxTorem(26);
+            color: nth($gray,1);
+        }
+    }
+}

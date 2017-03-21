@@ -1,0 +1,51 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+/*黑色三角*/
+.#{$fnt}-triangle-gray{
+    display: inline-block;
+    width: pxTorem(12);
+    height: pxTorem(8);
+    background: url(../../images/icon/toggle-1.png) no-repeat;
+    background-size:pxTorem(12) pxTorem(8);
+    vertical-align: middle;
+}
+
+.#{$fnt}-triangle-gray.true{
+    background: url(../../images/icon/toggle-2.png) no-repeat;
+    background-size:pxTorem(12) pxTorem(8);
+}
+/*黑色三角*/
+
+/*红色三角*/
+.#{$fnt}-triangle-red{
+    display: inline-block;
+    width: pxTorem(12);
+    height: pxTorem(8);
+    background: url(../../images/icon/toggle-3.png) no-repeat;
+    background-size:pxTorem(12) pxTorem(8);
+    vertical-align: middle;
+}
+
+.#{$fnt}-triangle-red.true{
+    background: url(../../images/icon/toggle-4.png) no-repeat;
+    background-size:pxTorem(12) pxTorem(8);
+}
+/*红色三角*/
+
+/*黑色三角大号*/
+.#{$fnt}-triangle-gray-big{
+    display: inline-block;
+    width: pxTorem(15);
+    height: pxTorem(9);
+    background: url(../../images/icon/toggle-big.png) no-repeat;
+    background-size:pxTorem(15) pxTorem(9);
+    vertical-align: middle;
+}
+.#{$fnt}-triangle-gray-big.true{
+    background: url(../../images/icon/toggle-big-true.png) no-repeat;
+    background-size:pxTorem(15) pxTorem(9);
+}
+/*黑色三角大号*/

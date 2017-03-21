@@ -1,0 +1,39 @@
+@import "../public/var.scss";
+/*支付成功模块*/
+.#{$fnt}-pay-succeed01{
+  background:$white;
+  border-bottom: 1px solid nth($gray,5);
+  height:pxTorem(400);
+  text-align: center;
+  .img-box{
+    padding-top:pxTorem(80);
+    padding-bottom: pxTorem(30);
+    img{
+      width:pxTorem(90);
+      height:pxTorem(90);
+    }
+  }
+  .pay-suc-txt{
+    font-size:pxTorem(22);
+    color:nth(gray,1);
+    margin-bottom: pxTorem(55);
+  }
+  .btn{
+    display: inline-block;
+    width:pxTorem(200);
+    height:pxTorem(50);
+    line-height: pxTorem(50);
+    border-radius: pxTorem(5);
+    color:$black0;
+    border:1px solid $black0;
+    font-size:pxTorem(24);
+  }
+  .btn.mr20{
+    margin-right:pxTorem(20);
+  }
+  .btn.active{
+    color:nth($red,3);
+    border:1px solid nth($red,3);
+  }
+}
+/*支付成功模块--end--*/

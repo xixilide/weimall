@@ -1,0 +1,113 @@
+//公共变量模块
+@import "../public/var.scss";
+
+.item1{
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  background-color: #fff;
+}
+.item1 li{
+  width: 100%;
+  height: 2.8rem;
+  margin-top: 0;
+  background-color: #fff;
+  border-bottom: .05rem solid #ebebeb;
+}
+.txt{
+  color: #666;
+}
+.pay-time{
+  width: 28%;
+  margin:0 auto;
+  height: 2.6rem;
+  padding:.4rem 0;
+  text-align: center;
+}
+.pay-con{
+  width: 100%;
+  text-align: center;
+}
+.time{
+  display: block;
+  float: left;
+  width: 1.2rem;
+  height: 1rem;
+  background-color: #333;
+  margin:0 .1rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+}
+.tim-dot{
+  display: block;
+  float: left;
+  padding: 0 .2rem;
+}
+.pay-box1{
+  width: 100%;
+  height: 2.8rem;
+  text-align: center;
+  line-height: 2.6rem;
+  font-size: 1.4rem;
+}
+.pay-way{
+  height: auto;
+}
+.pay-way-list{
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: .6rem;
+}
+.pay-way-list li{
+  height: 3.6rem;
+  width: 100%;
+  background-color: #fff;
+  // line-height: 3.6rem;
+  border-bottom: .05rem solid #ebebeb;
+}
+.pay_img{
+  display: block;
+  float: left;
+  width: 1.7rem;;
+  height: 1.7rem;
+  margin-left: .8rem;
+  margin-right: 1rem;
+}
+.pay_img img{
+  width: 100%;
+  height: auto;
+}
+.pay_txt{
+  float: left;
+  width: 60%;
+  height: 3.6rem;
+  position: relative;
+
+}
+.txt2{
+  clear: both;
+  margin-left: 3.5rem;
+}
+.txt1{
+  color: #333;
+  font-size: .84rem;
+  line-height: 1.6rem;
+
+}
+.txt2{
+  color: #666;
+  font-size: .6rem;
+}
+.pay-active{
+  display: block;
+  float: left;
+  margin-right: .6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.pay-active img{
+  width: 100%;
+  height: auto;
+}

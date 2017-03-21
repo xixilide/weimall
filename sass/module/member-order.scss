@@ -1,0 +1,106 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-member-order{
+       background: $white;
+       padding:pxTorem(26) 0;
+       border-top: 1px solid nth($gray,5);
+       border-bottom: 1px solid nth($gray,5);
+       .mem-order{
+        display: inline-block;
+        width: pxTorem(40);
+        height: pxTorem(40);
+        background:url(../../images/icon/i-member-4.png) no-repeat;
+        background-size: pxTorem(40)  pxTorem(40) ;
+        vertical-align:middle;
+    }
+    .mem-title{
+        display: inline-block;
+        margin-left:pxTorem(30);
+        line-height:pxTorem(40) ;
+        color: $black0;
+        font-size: pxTorem(28);           
+        vertical-align:middle;
+       
+    }
+    .more{
+        display: inline-block;
+        width: pxTorem(20);
+        height: pxTorem(30);
+        background:url(../../images/icon/i-member-5.png) no-repeat top right;
+        background-size: pxTorem(16)  pxTorem(28) ;
+        vertical-align:middle;
+    }
+    .order-list{
+        border-top: 1px solid nth($gray,5);
+        margin-top: pxTorem(30);
+        padding-top: pxTorem(10);
+        .item{
+            float: left;
+            text-align: center;
+            width: 20%;
+           .title{
+               margin-top: pxTorem(18);
+               color: $black0;
+               font-size: pxTorem(24);
+           }
+            .iconbox{
+                margin-top: pxTorem(20);
+                height:pxTorem(42);
+                  .icon-1{
+                    display: inline-block;
+                    position: relative;
+                    width: pxTorem(42);
+                    height: pxTorem(42);
+                    background:url(../../images/icon/i-member-6.png) no-repeat bottom right;;
+                    background-size: pxTorem(38)  pxTorem(33) ;
+                    }
+                    .icon-2{
+                    display: inline-block;
+                    width: pxTorem(42);
+                    height: pxTorem(42);
+                    background:url(../../images/icon/i-member-7.png) no-repeat bottom right;
+                    background-size: pxTorem(38)  pxTorem(32) ;
+                    }
+                   .icon-3{
+                    display: inline-block;
+                    width: pxTorem(42);
+                    height: pxTorem(42);
+                    background:url(../../images/icon/i-member-8.png) no-repeat bottom right;
+                    background-size: pxTorem(38)  pxTorem(34) ;
+                    }
+                   .icon-4{
+                    display: inline-block;
+                    width: pxTorem(42);
+                    height: pxTorem(42);
+                    background:url(../../images/icon/i-member-9.png) no-repeat bottom right;
+                    background-size: pxTorem(38)  pxTorem(32);
+                    }
+                    .icon-5{
+                    display: inline-block;
+                    width: pxTorem(44);
+                    height: pxTorem(43);
+                    background:url(../../images/icon/i-member-10.png) no-repeat bottom right;
+                    background-size: pxTorem(42)  pxTorem(40) ;
+                    }
+                   
+            }
+        }
+        
+    }
+    .link{
+        font-size: pxTorem(26);
+        color: nth($gray,3);
+        .text{
+            vertical-align: middle;
+        }
+    }
+    
+    .mem-head{
+        padding: 0 pxTorem(20);
+        height: pxTorem(40);
+        line-height: pxTorem(40);
+    }
+}

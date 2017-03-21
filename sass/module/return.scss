@@ -1,0 +1,40 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-return-number{
+    padding:  pxTorem(20);
+    background: $white;
+    line-height: pxTorem(42);
+    border-bottom:1px solid nth($gray,5);
+    font-size: pxTorem(28);
+    .tip{
+        display: block;
+        color: $black0;
+    }
+    .num{
+        color: nth($red,3);
+    }
+}
+
+.#{$fnt}-return-choose{
+    padding: 0 pxTorem(20);
+    background: $white;
+    border-bottom:1px solid nth($gray,5);
+    border-top:1px solid nth($gray,5);
+    .item{
+        font-size: pxTorem(26);
+        height: pxTorem(78);
+        line-height: pxTorem(78);
+        .choose{
+            float: left;
+            width: pxTorem(64);
+        }
+        .tip{
+           color: nth($gray,1);
+           margin-left: pxTorem(64);
+           border-bottom:1px solid nth($gray,5);
+        }
+    }
+}

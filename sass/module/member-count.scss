@@ -1,0 +1,36 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-member-count{
+       background: $white;
+       padding:  pxTorem(27) 0;
+       border-bottom: 1px solid nth($gray,5);
+      .item{
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            .count{
+                font-size: pxTorem(28);
+            }
+            .tip{
+                font-size: pxTorem(28);
+            }
+        }
+        .item-line{
+            border-left:1px solid #ddd;
+        }
+    
+}
+.#{$fnt}-integral-tab{
+//  margin-bottom: pxTorem(8);
+    padding: pxTorem(15) 0;
+    .item{
+        line-height: pxTorem(50);
+        height: pxTorem(50);
+        text-align:center;
+        }
+}

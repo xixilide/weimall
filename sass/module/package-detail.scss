@@ -1,0 +1,45 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-package-detail{
+    .content{
+        padding:pxTorem(30) pxTorem(20);
+        background: $white;
+        margin-bottom: 0 !important;
+        .list-img{
+            border: 1px solid nth($gray,6);
+        }
+        .list-tip{
+            font-size: pxTorem(22);
+            color: nth($gray,3);
+            height: pxTorem(28);
+            line-height: pxTorem(28);
+            overflow: hidden;
+        }
+    }
+       .pay{
+           .pay-line{    
+                height: pxTorem(70);
+                border-top:1px solid nth($gray,5);;
+                line-height:pxTorem(70); 
+               }
+        }
+}
+.#{$fnt}-package-time{
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    background: $white;
+    padding: pxTorem(14) pxTorem(20);
+    font-size: pxTorem(22);
+    .box{
+        line-height: pxTorem(36);
+    }
+    .title{
+        color: $black0;
+    }
+    .des{
+        color: nth($gray,1);
+    }
+}

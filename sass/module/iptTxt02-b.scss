@@ -1,0 +1,24 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-iptTxt02-b{height: pxTorem(80);position: relative;line-height:pxTorem(80);
+
+  .s-iptTxt{border-bottom:1px solid nth($gray,8);display:block;position: relative;
+
+    input{font-size: nth($fontrem,10);height:inherit;width:100%;}
+    input.mr01{width: 60%;}
+    //验证获取按钮
+   /* .s-btn01{display:inline-block;color: nth($gray,3);text-align: center;border-radius: pxTorem(6);
+      height:pxTorem(60);line-height:pxTorem(60);width:pxTorem(160);font-size: pxTorem(24);background-color: nth($gray,8);
+      overflow: hidden;position: absolute;right: 0;top:pxTorem(6);
+    }*/
+
+    $icon01:"../../images/icon/i-xsyj01.png";
+    .icon01{display:inline-block;background: url($icon01) no-repeat center center;
+      height:pxTorem(80);width:pxTorem(40);background-size:pxTorem(40)  pxTorem(25); overflow: hidden;position: absolute;right:pxTorem(14);top: 0; }
+
+  }
+}

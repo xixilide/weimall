@@ -1,0 +1,47 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-personal{
+    border-top:none;
+    .item-personal{
+       .content-box{
+            .content{
+                height: pxTorem(150);
+                line-height: pxTorem(150); 
+                .photo{
+                    float: right;
+                    margin:pxTorem(25) pxTorem(40) 0 0;
+                    @include border-radius(50%);
+                    width: pxTorem(100);
+                    height: pxTorem(100);
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .item:last-child{
+        border-bottom: none;
+    }
+    .item{
+        .content-box{
+            .content{
+                .per-title{
+                    float: left;
+                    font-size: pxTorem(28);
+                    margin-right: pxTorem(20);
+                    }
+                 .per-btn{
+                     float: right;
+                     margin-top: pxTorem(20);
+                 }
+                 .per-eye{
+                     float: right;
+                     margin-top: pxTorem(36); 
+                     margin-right: pxTorem(20);
+                 }
+            }
+        }
+    }
+}

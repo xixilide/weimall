@@ -1,0 +1,24 @@
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-product-info{
+    margin: pxTorem(10) 0 pxTorem(14) 0;
+    padding: pxTorem(80) pxTorem(20) pxTorem(40) pxTorem(20);
+    background: $white;
+    font-size: pxTorem(24);
+    color: $black0;
+    line-height: pxTorem(40);
+    .demo{
+        width: pxTorem(710);
+    }
+    .h1{
+        font-size: pxTorem(40);
+        line-height: pxTorem(48); 
+        text-align: center;
+    }
+    .h2{
+        font-size: pxTorem(30);
+        line-height: pxTorem(36); 
+        text-align: center;
+    }
+}

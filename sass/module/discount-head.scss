@@ -1,0 +1,24 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-discount-head{
+    position: relative;
+    padding: 0 pxTorem(20);
+    height:pxTorem(80);
+    line-height: pxTorem(80);
+    font-size: pxTorem(32);
+    color: $black0;
+    background: $white;
+    &:first-child{
+        margin-top:0;
+    }
+    &:before{
+        @include border-handle;
+        border-bottom: 1px solid nth($gray,8);
+    }
+   .count{
+       color: nth($red,3);
+   }
+   
+}

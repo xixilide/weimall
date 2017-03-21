@@ -1,0 +1,30 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+@mixin badge($badge-radius,$badge-width,$badge-height,$font,$bgcolor,$color){
+    @include border-radius($badge-radius);
+    display: inline-block;
+    width: $badge-width;
+    height: $badge-height;
+    line-height: $badge-height;
+    text-align: center;
+    font-size:$font;
+    background: $bgcolor;
+    color: $color;
+}
+.bage-red{
+    @include badge($badge-radius,$badge-width,$badge-height,pxTorem(20),nth($red,3),#fff)
+}
+.badge-left{
+    @include border-radius($badge-radius 0  0 $badge-radius);
+}
+.badge-right{
+    @include border-radius(0 $badge-radius $badge-radius 0);
+}
+
+.#{$fnt}-bage-sell{
+     @include badge(pxTorem(6),pxTorem(70),pxTorem(36),pxTorem(22),nth($red,4),#fff)
+}
+

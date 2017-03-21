@@ -1,0 +1,75 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-alert{
+    position: fixed;top: 0;left: 0; bottom: 0;right: 0;z-index: 999; background: rgba(0,0,0,0.5);
+   .content{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 9999;
+            width:100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background: #fff;
+            .des{
+                 height: pxTorem(140);
+                 border-bottom: 1px solid #eee;
+                .imgbox{
+                    @include border-radius(6px);
+                    position: absolute;
+                    top: pxTorem(-60);
+                    left: pxTorem(20);
+                    width: pxTorem(180);
+                    height: pxTorem(180);
+                    background: #fff;
+                    border: 1px solid #eee;
+                    text-align: center;
+                    line-height:pxTorem(180) ;
+                   .img{
+                         width: pxTorem(139);
+                         height: pxTorem(163);
+                    }
+                }
+                .price{
+                    display: inline-block;
+                    margin:pxTorem(30) 0 0 pxTorem(210);
+                    
+                }
+                .close{
+                    position: absolute;
+                    top: pxTorem(20);
+                    right: pxTorem(20);
+                    display: block;
+                    width: pxTorem(24);
+                    height: pxTorem(24);
+                    background: url(../../images/icon/close.png) no-repeat center;
+                    background-size: pxTorem(21) pxTorem(21);
+                }
+
+            }
+       .attrbox{
+              padding: 0 pxTorem(20);
+              .attr-title{
+                  color: nth($gray,1);
+                  font-size: pxTorem(30);
+                  padding: pxTorem(30) 0;
+              }
+              .attr{
+                  .udm-btn-default{
+                      margin:0 pxTorem(28) pxTorem(14) 0;
+                  }
+              }
+           }
+            
+        }
+       .num{
+           padding: pxTorem(30) pxTorem(20) 0 pxTorem(20);
+           .udm-fl{
+               padding-top: pxTorem(6);
+           }
+          }
+}

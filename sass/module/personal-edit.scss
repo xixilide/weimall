@@ -1,0 +1,13 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-personal-edit{
+    margin: 0 !important;
+    padding:0 pxTorem(20);
+    background: $white;
+    border-bottom: 1px solid nth($gray,5);
+    .edit-p{
+        padding:pxTorem(26) 0;
+    }
+}

@@ -1,0 +1,25 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-package-des{
+       padding: pxTorem(22) 0 pxTorem(20) pxTorem(20);
+       .del{
+           margin-left: pxTorem(20);
+           text-decoration: line-through;
+           font-size: pxTorem(22);
+           color: nth($gray,1);
+           
+       }
+}
+.#{$fnt}-package-h{
+    padding: 0 pxTorem(20);
+    height: pxTorem(100);
+    line-height: pxTorem(100);
+    border-top: 1px solid nth($gray,8);
+    border-bottom: 1px solid nth($gray,8);
+    color:$black0;
+    font-size: pxTorem(30);
+    background: $white;
+ }

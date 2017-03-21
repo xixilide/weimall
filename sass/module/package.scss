@@ -1,0 +1,28 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-package{
+    .content{
+        .list-detail{
+            .list-title{
+                margin-top: pxTorem(36);
+            }
+        }
+        .price{
+            position: absolute;
+            right: pxTorem(20);
+            top: pxTorem(62);
+            text-align: right;
+            line-height:pxTorem(38) ;
+            .#{$fnt}-fs22{
+                font-size:pxTorem(24) !important;
+            }
+            .#{$fnt}-gray3{
+                margin-top:pxTorem(0) ;
+            }
+            
+        }
+    }
+}

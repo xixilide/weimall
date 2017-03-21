@@ -1,0 +1,113 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-all-orderlist.mt0{
+  margin-top:0 !important;
+}
+.#{$fnt}-all-orderlist.another{
+  margin:pxTorem(20) 0;
+  padding:pxTorem(20) 0 pxTorem(10) 0;
+}
+.#{$fnt}-all-orderlist{
+    width: 100%;
+    margin-bottom: pxTorem(10);
+    background: $white;
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    &:first-child{
+      margin-top: pxTorem(20);  
+    }
+    .list-header{
+       padding:0 pxTorem(20);
+       line-height: pxTorem(65); 
+       text-align: left;
+    }
+    .order-list{
+      background: nth($gray,8);
+      .item{
+        margin-bottom: pxTorem(10);
+        border-bottom:1px solid nth($gray,5);
+      }
+      .item.last{
+        margin-bottom: 0;
+        border-top:1px solid nth($gray,5);
+      }
+    }
+    .content.bt{
+      border-top:1px solid nth($gray,8);
+    }
+    .content{
+        position: relative;
+        margin-bottom: pxTorem(10);
+        padding:pxTorem(30) pxTorem(20);
+        background: nth($gray,7);
+        .list-img{
+            width: pxTorem(140);
+            height: pxTorem(140);
+        }
+         .s-wh{
+            position:absolute;bottom: 0;left:0;width: 100%;display: inline-block;text-align: center;
+            background-color:$black0;color:$white;
+            height: pxTorem(42);line-height: pxTorem(42);font-size: pxTorem(24);
+            opacity:0.8;-webkit-filter:opacity(.8);filter:alpha(opacity=80);
+        }
+        .info{
+            position: relative;
+        }
+        .list-detail{
+            float: left;
+            width: 56%;
+            line-height:pxTorem(34);
+            .list-title{
+                margin-top: pxTorem(20);
+                height: pxTorem(68);
+                overflow: hidden;
+            }
+            .udm-fs22{
+                font-size:pxTorem(24) !important;
+            }
+        }
+        .price{
+            position: absolute;
+            right: pxTorem(20);
+            top: pxTorem(46);
+            text-align: right;
+            line-height:pxTorem(38) ;
+            .#{$fnt}-fs22{
+                font-size:pxTorem(24) !important;
+            }
+            .#{$fnt}-gray3{
+                margin-top:pxTorem(28) ;
+            }
+        }
+        
+
+    }
+    .pay{
+            background: $white;
+            font-size:pxTorem(22);
+            padding-top:pxTorem(10);
+            .pay-line.z-another{
+                text-align: left;
+                padding-left:pxTorem(20);
+            }
+            .pay-line{
+                padding-right: pxTorem(20);
+                border-top:1px solid #ddd;
+                line-height:pxTorem(70); 
+                text-align:right;
+                .name,.val{
+                        font-size:pxTorem(22);
+                    }
+                .name{
+                    color:nth($gray,1);
+                 }
+                .val{
+                    color:$gray0;
+                 }
+                }
+        
+            
+       }
+}

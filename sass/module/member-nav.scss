@@ -1,0 +1,75 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-member-nav{
+       border-top: 1px solid nth($gray,5);
+       background: $white;
+      .item{
+          height: pxTorem(90);
+          line-height: pxTorem(90);
+          border-bottom: 1px solid nth($gray,5);
+           .item-left{
+               float: left;
+              .link{
+                  display: inline-block;
+                  vertical-align:middle;
+                  color: $black0;
+                  font-size: pxTorem(28);
+                  height: pxTorem(40);
+                  line-height: pxTorem(40);
+               }
+           }
+            .text{
+                    float: right;
+                    margin-right: pxTorem(10);
+                    font-size: pxTorem(26);
+                    color: nth($gray,3);
+                    
+               }
+            .item-right{
+               float: right;
+               line-height: pxTorem(80);
+               margin-right: pxTorem(20);
+               padding-top: pxTorem(10);
+              
+            }
+           .icon{
+                display: inline-block;
+                margin: 0 pxTorem(20);
+                width: pxTorem(40);
+                height: pxTorem(40);
+                vertical-align:middle;
+               
+           }
+           .icon-1{
+                    background:url(../../images/icon/i-member-11.png) no-repeat  ;
+                    background-size: pxTorem(40)  pxTorem(40);
+                   }
+            .icon-2{
+                    background:url(../../images/icon/i-member-12.png) no-repeat  ;
+                    background-size: pxTorem(40)  pxTorem(40) ;
+               }
+             .icon-3{
+                    background:url(../../images/icon/i-member-13.png) no-repeat ;
+                    background-size: pxTorem(40)  pxTorem(40) ;
+                   }
+             .icon-4{
+                    background:url(../../images/icon/i-member-14.png) no-repeat ;
+                    background-size: pxTorem(40)  pxTorem(40) ;
+                   }
+              .more{
+                    display: inline-block;
+                    width: pxTorem(20);
+                    height: pxTorem(30);
+                    background:url(../../images/icon/i-member-5.png) no-repeat top right;
+                    background-size: pxTorem(16)  pxTorem(28) ;
+              }
+              
+      }
+     
+
+
+    
+}

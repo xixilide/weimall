@@ -1,0 +1,7 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-integral-type{
+   top:pxTorem(172) !important;
+}

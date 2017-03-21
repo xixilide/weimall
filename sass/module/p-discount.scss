@@ -1,0 +1,25 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-discount{
+    padding: pxTorem(30) pxTorem(20);
+    background: #fff;
+    .icon-more{
+        display: inline-block;
+        width:pxTorem(18) ;
+        height:pxTorem(29);
+        background: url(../../images/icon/dis-1.jpg);
+        background-size: pxTorem(18) pxTorem(29);
+    }
+     .true{
+        display: inline-block;
+        width: pxTorem(29);
+        height: pxTorem(18);
+        background: url(../../images/icon/p-e-1.jpg) no-repeat;
+        background-size:pxTorem(29) pxTorem(18) ;  
+   }
+   .dis-con{margin-left:pxTorem(84);padding:pxTorem(18) 0;border-bottom: 1px solid nth($gray,6);}
+}

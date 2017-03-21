@@ -1,0 +1,66 @@
+@import "../public/var.scss";
+/*收货地址设置模块*/
+.#{$fnt}-set-address01{
+  width:100%;
+  .item{
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    margin-bottom: pxTorem(20);
+    .content-box{
+      background: $white;
+      padding:pxTorem(30) pxTorem(20);
+      .user-box{
+        font-size:pxTorem(30);
+        color:$black0;
+        .name{
+          padding-right:pxTorem(40);
+        }
+      }
+      .address-info{
+        font-size:pxTorem(26);
+        color:nth($gray,1);
+        margin-top:pxTorem(20);
+      }
+      .set-box{
+        margin-top:pxTorem(65);
+        .btn-box{
+          float: right;
+          height:pxTorem(30);
+          .func-box.mr20{
+            margin-right:pxTorem(20);
+          }
+          .func-box{
+            display: inline-block;
+            .func{
+              display: inline-block;
+              width:pxTorem(30);
+              height:pxTorem(30);
+              vertical-align: middle;
+              margin-right:pxTorem(10);
+            }
+            .edit-icon{
+              background: url("../../images/icon/edit-icon.png") no-repeat top right;
+              background-size: pxTorem(28) pxTorem(28);
+            }
+            .delete-icon{
+              background: url("../../images/icon/icon-rubbish.png") no-repeat top right;
+              background-size: pxTorem(28) pxTorem(28);
+            }
+            .txt{
+              color:nth($gray,1);
+              font-size:pxTorem(24);
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+  .item.bt{
+    border-top:0;
+  }
+  .item.last{
+    margin-bottom: pxTorem(110);
+  }
+}
+/*收货地址设置模块--end--*/

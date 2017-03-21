@@ -1,0 +1,60 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-icon-num{
+       position: relative;
+       .num{
+            display: inline-block;
+            position: absolute;
+            top: pxTorem(-4);
+            right: pxTorem(-20);
+            background: nth($red,3);
+            color: $white;
+            font-size: pxTorem(20);
+            min-width: pxTorem(20);
+            height: pxTorem(20);
+            padding: pxTorem(2);
+            line-height: pxTorem(20);
+            @include border-radius(50%);
+            text-align: center;
+    }
+        .num-more{
+             width: pxTorem(36); 
+             line-height: pxTorem(20);
+             height: pxTorem(20);
+             padding:0 pxTorem(2) pxTorem(4) pxTorem(2);
+             @include border-radius(pxTorem(18));
+            sup{
+                vertical-align: text-top;
+            }
+        }
+   }
+.#{$fnt}-icon-num-big{
+     position: relative;
+           .num{
+            display: inline-block;
+            position: absolute;
+            top: pxTorem(-16);
+            right: pxTorem(-14);
+            background: nth($red,3);
+            color: $white;
+            font-size: pxTorem(20);
+            min-width: pxTorem(20);
+            height: pxTorem(20);
+            padding: pxTorem(2);
+            border: 1px solid #fff;
+            line-height: pxTorem(20);
+            @include border-radius(50%);
+            text-align: center;
+        }
+        .num-more{
+            width: pxTorem(36); 
+             line-height: pxTorem(20);
+             height: pxTorem(20);
+             padding:0 pxTorem(2) pxTorem(4) pxTorem(2);
+             @include border-radius(pxTorem(18));
+        }
+    
+}

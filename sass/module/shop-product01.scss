@@ -1,0 +1,66 @@
+@import "../public/var.scss";
+/*购物车商品列表模块*/
+.#{$fnt}-shop-product01{
+  width:100%;
+  .shop-product-item{
+    margin-top:pxTorem(10);
+    background: $white;
+    .shop-product-box{
+      border-top:1px solid nth($gray,5);
+      border-bottom:1px solid nth($gray,5);
+      padding:pxTorem(20);
+      .radio-box{
+        height:pxTorem(170);
+        line-height: pxTorem(170);
+        float: left;
+      }
+      .product-box{
+        margin-left:pxTorem(54);
+        height:pxTorem(170);
+        .img-box{position: relative;
+          float: left;
+          width:pxTorem(170);
+          height:pxTorem(170);
+          overflow: hidden;
+          border:1px solid nth($gray,5);
+          img{
+            width:inherit;height: inherit;
+          }
+          .s-wh{position:absolute;bottom:0;left:0;width: 100%;display: inline-block;text-align: center;
+            background-color:$black0;color:$white;
+            height: pxTorem(46);line-height: pxTorem(46);font-size: pxTorem(24);
+            opacity:0.8;-webkit-filter:opacity(.8);filter:alpha(opacity=80);}
+        }
+        .product-info-box{
+          margin-left:pxTorem(190);
+          height:pxTorem(170);
+          .product-title{
+            font-size:pxTorem(26);
+            color:$black0;
+            padding:pxTorem(22) pxTorem(40) 0 0;
+            height:pxTorem(64);
+            line-height: pxTorem(32);
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+            -webkit-line-clamp: 2; /** 显示的行数 **/
+            overflow: hidden;  /** 隐藏超出的内容 **/
+          }
+          .product-price-box{
+            margin-top:pxTorem(50);
+            .product-price{
+              color:nth($red,3);
+              font-size:pxTorem(24);
+              .price{
+                font-size:pxTorem(30);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*购物车商品列表模块--end--*/

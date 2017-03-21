@@ -1,0 +1,43 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-search-b-k{position: relative;min-height:pxTorem(80);
+    //广告图
+    .swiper{width:100%;}
+}
+
+//搜索栏
+.#{$fnt}-search-box{height: pxTorem(88);position:fixed;width: 100%;background: url("../../images/bj-search01.png") repeat-x 0 0;z-index: 999;
+    .search-nr{margin:pxTorem(14) pxTorem(20) 0 pxTorem(20); z-index: 99;
+        //标识
+        .search-logo{float:left; width:pxTorem(45) ;}
+        .search-logo .img{max-width: pxTorem(45) ;margin-top: pxTorem(3) ;}
+        //输入区
+        .search-content{position:relative;margin:0 pxTorem(77)  0 pxTorem(65) ;}
+        .search-content .img{position: absolute;width: pxTorem(32); left: 10px;top:6px;}
+        .search-input{
+            @include border-radius(pxTorem(28) );
+            display: inline-block;
+            text-indent: pxTorem(60) ;
+            width: 100%;
+            height: pxTorem(56) ;
+            font-size: pxTorem(22);
+            background: #fff;
+        }
+        //消息
+        .search-news{position:relative;float:right;width:pxTorem(57);height: pxTorem(36); }
+        .search-news .i-new{display: inline-block;width:pxTorem(36);height:pxTorem(36);background:url(../../images/search-3.png) no-repeat center;
+            background-size: pxTorem(32) pxTorem(32);}
+        .search-news .icon{display: inline-block;position: absolute;top:0;right: 4px; z-index: 99;width:pxTorem(12);height:pxTorem(12);
+            background:url(../../images/search-4.png) no-repeat center;background-size: pxTorem(10) pxTorem(10);}
+        .search-news .text{position: absolute;top:pxTorem(36);left:0;color: #fff;font-size: nth($fontrem,3);display:inline-block;}
+
+    }
+
+}
+//search-fix
+.#{$fnt}-search-box.search-fix{position:fixed;top:0;z-index:999;background:none;background-color:nth($red,4);}
+

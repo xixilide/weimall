@@ -1,0 +1,42 @@
+@import "../public/var.scss";
+//单选按钮模块
+.#{$fnt}-radio-box01.ml80{
+  margin-left:pxTorem(80);
+}
+.#{$fnt}-radio-box01{
+  display: inline-block;
+  line-height: pxTorem(32);
+  height:pxTorem(32);
+  .check{
+    display: inline-block;
+    width:pxTorem(32);
+    height:pxTorem(32);
+    background: url("../../images/icon/address-icon-no.png") no-repeat top left;
+    background-size: pxTorem(30) pxTorem(30);
+    vertical-align: middle;
+    margin-right:pxTorem(20);
+    .ipt-check{width: 1px;height: 1px;visibility:hidden;}
+  }
+  .check.true{
+    background: url("../../images/icon/address-icon-true.png") no-repeat top left;
+    background-size: pxTorem(30) pxTorem(30);
+  }
+  .txt{
+    color:nth($gray,1);
+    font-size:pxTorem(26);
+    vertical-align: middle;
+  }
+  .txt.c-333{
+    color:$black0;
+    font-size:pxTorem(26);
+  }
+  .price-box{
+    padding-left:pxTorem(20);
+    font-size:pxTorem(24);
+    color:nth($red,3);
+    .price{
+      font-size:pxTorem(30);
+    }
+  }
+}
+

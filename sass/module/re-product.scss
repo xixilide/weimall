@@ -1,0 +1,30 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-re-product{ background: nth($gray,8);
+.box{width: 100%;}
+.item{float: left;width:50%;margin-bottom:pxTorem(10);padding:0 pxTorem(5) 0 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing:border-box;}
+.item:nth-child(2n){padding:0 0  0 pxTorem(5) ;}
+.item .img-box{width:100%;background:#fff;height:pxTorem(370);border-bottom: 1px solid nth($gray,6); text-align: center;line-height: pxTorem(370); }
+.item .img{width: pxTorem(370);max-height:pxTorem(370);vertical-align: middle;}
+.item .describe{background:#fff; padding: pxTorem(20) pxTorem(30);}
+.item .title{font-size: pxTorem(24);line-height: pxTorem(36);height:pxTorem(72);overflow: hidden;}
+.item .price{font-size: pxTorem(30);}
+.item .rmb{font-size: pxTorem(22); }
+.item .integral{margin-top:pxTorem(6);line-height: pxTorem(30);}
+.item .int-score{font-size: pxTorem(30); color: nth($red,4);}
+.item .int-ever{ margin-left: pxTorem(14);font-size: pxTorem(22);color: nth($gray,3);text-decoration: line-through;}
+.item .int-text{margin-left: pxTorem(8);font-size: pxTorem(22);color: nth($gray,3);}
+.item .int-count{font-size: pxTorem(22);color: nth($gray,1);}
+.item .txt-box{ height: pxTorem(40);line-height: pxTorem(40);}
+.item .txt-box .integral-num{ font-size:pxTorem(30);color:nth($red,4);}
+.item .txt-box .jifen{ font-size:pxTorem(22); color:nth($gray,1);}
+.item .txt-box .delete-price{ font-size:pxTorem(22); color:$gray0; text-decoration: line-through;padding-left:pxTorem(10);}
+.item .txt-box .limit{ float: right; color:nth($gray,1);font-size:pxTorem(22);line-height: pxTorem(40);height:pxTorem(40);}
+}
+//有购物车结算模块加上了mb100这个类
+.#{$fnt}-re-product.mb100{ margin-bottom: pxTorem(100);}
+

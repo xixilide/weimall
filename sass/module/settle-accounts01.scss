@@ -1,0 +1,63 @@
+@import "../public/var.scss";
+/*去结算模块*/
+.#{$fnt}-settle-accounts01{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:pxTorem(90);
+  line-height: pxTorem(90);
+  border-top:1px solid nth($gray,5);
+  border-bottom:1px solid nth($gray,5);
+  background: $white;
+  .totall-check-box{
+    display:inline-block;
+    margin:0 pxTorem(20);
+    .totall-radio{
+      width:pxTorem(32);
+      height:pxTorem(32);
+      vertical-align: middle;
+    }
+    .totall-check{
+      font-size:pxTorem(26);
+      color:$black0;
+      vertical-align: middle;
+      padding-left:pxTorem(12);
+    }
+  }
+  .totall-price-box{
+    display: inline-block;
+    font-size:pxTorem(24);
+    color:$black0;
+    vertical-align: middle;
+    .totall-price.c-red{
+      color:nth($red,3);
+      font-size:pxTorem(30);
+      .price{
+        font-size:pxTorem(32);
+      }
+    }
+  }
+  .totall-price-box.ml20{
+    margin-left:pxTorem(20);
+  }
+  .totall-price-box.c-red{
+    color:nth($red,3);
+  }
+  .settle-btn{
+    float: right;
+    width:pxTorem(220);
+    background: nth($red,4);
+    color:$white;
+    text-align: center;
+    font-size:pxTorem(32);
+  }
+  .settle-btn.bg-orange{
+    background: nth($orange,2);
+  }
+  .settle-btn.bg-gray{
+    background: nth($gray,11);
+  }
+}
+.#{$fnt}-settle-accounts01.nav01-h-bottom{bottom:pxTorem(90);}
+/*去结算模块--end--*/

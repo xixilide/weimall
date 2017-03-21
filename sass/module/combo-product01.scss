@@ -1,0 +1,89 @@
+﻿//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+/*套餐列表-商品展示模块*/
+.#{$fnt}-combo-product01-box{
+  width:100%;
+  background:nth($gray,7);
+  li{
+    margin-top:pxTorem(10);
+  }
+  li:first-child{
+    margin-top:0;
+  }
+}
+.#{$fnt}-combo-product01{
+  height:pxTorem(270);
+  background:$white;
+  .product-img-box{
+    width:pxTorem(270);
+    height:pxTorem(270);
+    float:left;
+    img{width:100%;}
+  }
+  .kong{
+    width:pxTorem(60);
+    height:pxTorem(270);
+    float: right;
+  }
+  .product-dec-box{
+     margin:0 pxTorem(60) 0 pxTorem(270) ;
+    .product-dec{
+       padding:pxTorem(40) 0 0 pxTorem(20);
+      .product-dec-title {
+        color: $black0;
+        font-size: pxTorem(32);
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+        -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+        -webkit-line-clamp: 2; /** 显示的行数 **/
+        overflow: hidden;  /** 隐藏超出的内容 **/
+      }
+      .product-dec-sales{
+        height:pxTorem(90);
+        line-height:pxTorem(90);
+        .product-dec-sales-txt{
+          color:nth($gray,1);
+          font-size:pxTorem(24);
+        }
+        .hold-sell{
+          display: inline-block;
+          height:pxTorem(30);
+          line-height:pxTorem(30);
+          padding:0 pxTorem(10);
+          font-size:pxTorem(24);
+          color:$white;
+          border-radius: pxTorem(5);
+          background:nth($red,3);
+        }
+      }
+      .product-price{
+        line-height:pxTorem(20);
+        //padding-right:pxTorem(40);
+        .price-promotion{
+          color:nth($red,3);
+          font-size:pxTorem(24);
+          em{
+            font-size:pxTorem(32);
+          }
+        }
+        .price-reality{
+          color:$gray0;
+          text-decoration:line-through;
+          font-size:pxTorem(22);
+          padding-left:pxTorem(5);
+        }
+        .sales-volume{
+          font-size:pxTorem(22);
+          color:nth($gray,1);
+          float:right;
+        }
+      }
+    }
+  }
+}
+
+/*套餐列表-商品展示模块--end--*/

@@ -1,0 +1,19 @@
+@import "../public/var.scss";
+/*评价星星模块*/
+.#{$fnt}-star-icon-box01{
+  display: inline-block;
+  .star-icon{
+    display: inline-block;
+    width:pxTorem(36);
+    height:pxTorem(36);
+    background: url("../../images/icon/star-icon01.png") no-repeat;
+    background-size: pxTorem(36) pxTorem(36);
+    margin-right:pxTorem(14);
+    vertical-align: middle;
+  }
+  .star-icon.active{
+    background: url("../../images/icon/star-icon02.png") no-repeat;
+    background-size: pxTorem(36) pxTorem(36);
+  }
+}
+/*评价星星模块--end--*/

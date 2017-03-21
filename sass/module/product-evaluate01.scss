@@ -1,0 +1,79 @@
+@import "../public/var.scss";
+/*商品评价模块*/
+.#{$fnt}-product-evaluate01{
+  width:100%;
+  border-top:1px solid nth($gray,5);
+  border-bottom:1px solid nth($gray,5);
+  .good-reputation{
+    padding:0 pxTorem(20);
+    background: $white;
+    border-bottom: 1px solid nth($gray,8);
+    height:pxTorem(100);
+    line-height: pxTorem(100);
+    .z-txt{
+      color:$black0;
+      font-size:pxTorem(28);
+      padding-right:pxTorem(26);
+      vertical-align: middle;
+    }
+    .evaluation-result{
+      float: right;
+      font-size:pxTorem(26);
+      color:nth($gray,1);
+    }
+  }
+  .product-evaluate{
+    padding:pxTorem(40) pxTorem(20) pxTorem(20) pxTorem(20);
+    background:$white;
+    .evaluate-txt{
+      color:$black0;
+      font-size:pxTorem(28);
+    }
+    .evaluate-content{
+      margin-top:pxTorem(20);
+      padding:pxTorem(26) pxTorem(16) pxTorem(16) pxTorem(16);
+      background: nth($gray,10);
+      border-radius: pxTorem(6);
+      .write-txt{
+        height:pxTorem(100);
+        width:100%;
+        border:none;
+        outline: none;
+        font-size:pxTorem(26);
+        color:$gray0;
+        resize:none;
+        background: none;
+         &:focus{
+                color: $black0;
+            }
+      }
+     
+    }
+  }
+  .evaluate-explain{
+    padding:pxTorem(30) pxTorem(80);
+    margin-bottom: pxTorem(90);
+    .default-txt{
+      color:nth($gray,1);
+      font-size:pxTorem(26);
+      margin-bottom: pxTorem(6);
+    }
+    .corresponding-txt-box{
+      margin-top:pxTorem(30);
+      .corresponding-txt{
+        color:nth($gray,1);
+        font-size:pxTorem(26);
+        margin-bottom: pxTorem(10);
+      }
+      .star-number-box{
+        margin-bottom: pxTorem(10);
+        .rank{
+          float: right;
+          font-size:pxTorem(26);
+          color:nth($gray,1)
+        }
+      }
+    }
+}
+}
+/*商品评价模块--end--*/

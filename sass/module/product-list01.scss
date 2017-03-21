@@ -1,0 +1,54 @@
+@import "../public/var.scss";
+/*商品列表展示模块*/
+.#{$fnt}-product-list01{
+  width:100%;
+  li{
+    width:50%;
+    float: left;
+    margin-top:pxTorem(10);
+    .product-box.pr{
+      padding-right:pxTorem(5);
+    }
+    .product-box.lt{
+      padding-left:pxTorem(5);
+    }
+    .product-box{
+      .product{
+        background: $white;
+        .img-box{
+          text-align: center;
+          overflow:hidden;
+          img{
+            width:pxTorem(370);
+            height:pxTorem(370);
+          }
+        }
+        .product-info-box{
+          border-top:1px solid nth($gray,8);
+          padding:pxTorem(20) pxTorem(30);
+          .product-name{
+            font-size:pxTorem(24);
+            color:$black0;
+            height: pxTorem(64);
+            line-height: pxTorem(32);
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+            -webkit-line-clamp: 2; /** 显示的行数 **/
+            overflow: hidden;  /** 隐藏超出的内容 **/
+          }
+          .price-box{
+            color:nth($red,3);
+            font-size:pxTorem(22);
+            .price{
+              font-size:pxTorem(30);
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+/*商品列表展示模块--end--*/

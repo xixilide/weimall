@@ -1,0 +1,52 @@
+@import "../public/var.scss";
+/*订单信息地址模块*/
+.#{$fnt}-information-address01{
+  width:100%;
+  background: $white;
+  border-bottom: 1px solid nth($gray,5);
+  .information-content{
+    padding:0 pxTorem(20) pxTorem(26) pxTorem(20);
+    min-height:pxTorem(120);
+    .content{
+      margin-right:pxTorem(21);
+      .user-infor{
+        padding:pxTorem(26) 0 pxTorem(20) pxTorem(45);
+        font-size:pxTorem(30);
+        color:$black0;
+        .name{
+          padding-right:pxTorem(40);
+        }
+      }
+      .user-address{position: relative;
+        min-height:pxTorem(30);
+        line-height: pxTorem(30);
+        .address-icon{
+          position: absolute;left: 0;
+          display: inline-block;
+          width:pxTorem(26);
+          height:pxTorem(30);
+          background: url("../../images/icon/address-icon01.png") no-repeat;
+          background-size:pxTorem(26) pxTorem(30);
+          vertical-align: middle;
+          margin-right:pxTorem(8);
+        }
+        .txt{margin-left: pxTorem(36);
+          vertical-align: middle;display:inline-block;
+          font-size: pxTorem(24);
+        }
+      }
+    }
+    .right-icon{
+      float: right;
+      width:pxTorem(21);
+      height:pxTorem(140);
+      line-height: pxTorem(140);
+      img{
+        width:pxTorem(21);
+        height:pxTorem(32);
+        vertical-align: middle;
+      }
+    }
+  }
+}
+/*订单信息地址模块--end--*/

@@ -1,0 +1,12 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-fixed-bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    height: pxTorem(90);
+    z-index:99;
+}

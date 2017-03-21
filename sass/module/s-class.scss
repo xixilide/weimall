@@ -1,0 +1,38 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-s-class{
+                 position:fixed;left:0;top:pxTorem(90);bottom:pxTorem(92);z-index:999;overflow-x:hidden;width: 25%;
+                .list{
+                    .item{ 
+                        width: 100%;
+                        border-bottom: 1px solid nth($gray,8);
+                        background: #fff;
+                        height: pxTorem(92);
+                        line-height: pxTorem(92);
+                        text-align: center;
+                        font-size: pxTorem(26);
+                        a{
+                              color:$black0;
+                          }
+                          
+                        &:hover{
+                           background: nth($gray,8); 
+                           a{
+                               color: nth($red,3);
+                               }
+                        }
+
+                       }
+                       .item.active{
+                           background: nth($gray,8); 
+                           a{
+                               color: nth($red,3);
+                               }
+                        }
+                  
+                }
+                
+} 

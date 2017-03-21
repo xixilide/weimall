@@ -1,0 +1,26 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-orderlist-more{
+    position: absolute;
+    top: 0;
+    left:pxTorem(90) ;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    .line{
+        display: inline-block;
+        width: pxTorem(30);
+        height:pxTorem(80);
+        background: url(../../images/m-list-1.png) no-repeat center center;
+        background-size:pxTorem(30) 1px ;
+        margin: 0 auto;
+    }
+    .date-end{
+        margin-right: pxTorem(120);
+    }
+    .date-click{
+        margin: pxTorem(30) pxTorem(120) pxTorem(30) pxTorem(30) ;
+    }
+}

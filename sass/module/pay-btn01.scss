@@ -1,0 +1,19 @@
+@import "../public/var.scss";
+/*支付按钮模块*/
+.#{$fnt}-pay-btn01{
+  padding:0 pxTorem(20);
+  .pay-btn{
+    display: block;
+    height:pxTorem(90);
+    background: nth($red,4);
+    color:$white;
+    font-size:pxTorem(32);
+    border-radius: pxTorem(6);
+    line-height: pxTorem(90);
+    text-align: center;
+  }
+  .pay-btn.no{
+    background: nth($gray,4);
+  }
+}
+/*支付按钮模块--end--*/

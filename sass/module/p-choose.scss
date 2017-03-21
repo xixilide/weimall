@@ -1,0 +1,24 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-choose{
+     background: $white;
+     margin-top: pxTorem(20);
+     .icon-more{
+         display:inline-block;
+         width: pxTorem(31);
+         height: pxTorem(6);
+         background: url(../../images/icon/p-ch-1.png) no-repeat;
+         background-size: pxTorem(31) pxTorem(6);
+         vertical-align: middle;
+     }
+     .p-tips{
+         margin: 0 pxTorem(31) 0 pxTorem(82);
+         font-size: pxTorem(26);
+         vertical-align:middle;
+         line-height: pxTorem(36);
+     }
+}

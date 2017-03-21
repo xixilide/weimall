@@ -1,0 +1,110 @@
+
+//rem适配px变量
+$browser-default-font-size:16;
+$fontUnit:rem;
+//px转换rem函数 调用pxTorem(16)
+@function pxTorem($px){//$px为需要转换的字号
+  @return $px/2/$browser-default-font-size + $fontUnit;
+}
+
+//全局变量区－－－－－－－－－－
+//前缀
+$fnt:udm;
+//标准颜色
+$red:#d33,#f00/*2*/,#e4393c/*3-btn*/,#f23030/*4-navbtn背景*/,#e45050/*5-会员中心头部背景*/,#973535/*6-会员中心等级*/;
+$red0:#d33;
+$gray:#666/*1文字*/,#888/*2*/,#999/*3文字*/,#ccc/*4*/,#ddd/*5-nav线*/,#eee/*6*/,#f8f8f8/*7*/,#e8e8ed/*8-线,背景色*/,#f5f5f5/*9背景色*/,#f6f6f6/*10背景色*/,#bfbfbf/*11背景色*/;
+$gray0:#999;
+$black:#333,#000;
+$black0:#333;
+$white:#fff;
+$yellow:#fc0,#f8b551/*2-优惠券*/;
+$yellow1:#fc0,#fcbc41/*2-btn色*/;
+$blue:#06c,;
+$green:#090,#9cc447/*2-优惠券*/,#29c942/*3-已签收*/;
+$orange:#e70,#fcbc41/*-取消订单按钮*/;
+//标准文字大小
+//$fontsz:12px,14px,16px,18px,20px,22px,24px,26px,28px,30px,32px,34px,36px,40px,46px,50px;
+$fontsz:pxTorem(12)/*1*/,pxTorem(14)/*2*/,pxTorem(16)/*3*/,pxTorem(18)/*4*/,pxTorem(20)/*5*/,pxTorem(22)/*6*/,pxTorem(24)/*7*/,
+        pxTorem(26)/*8*/,pxTorem(28)/*9*/,pxTorem(30)/*10*/,pxTorem(32)/*11*/, pxTorem(34)/*12*/,pxTorem(36)/*13*/,pxTorem(40)/*14*/,
+        pxTorem(46)/*15*/,pxTorem(50)/*16*/;
+$fontsz0:pxTorem(16);
+$fontrem:pxTorem(12)/*1*/,pxTorem(14)/*2*/,pxTorem(16)/*3*/,pxTorem(18)/*4*/,pxTorem(20)/*5*/,pxTorem(20)/*6*/,pxTorem(22)/*7*/,pxTorem(24)/*8*/,
+        pxTorem(26)/*9*/,pxTorem(28)/*10*/,pxTorem(30)/*11*/,pxTorem(32)/*12*/,pxTorem(34)/*13*/,pxTorem(36)/*14*/,pxTorem(38)/*15*/,
+        pxTorem(40)/*15*/,pxTorem(46)/*17*/,pxTorem(50)/*18*/;
+//宽度高度
+$width-w:100%;
+$height-h:100%;
+//行高
+$lineH:100%,150%,180%,200%,250%,300%;
+
+//badge组件变量
+$badge-width:pxTorem(90);
+$badge-height:pxTorem(36);
+$badge-radius:pxTorem(18) ;
+
+//全局变量区－－－－－－－－－end
+
+
+//功能区－－－－－－－－－－－－－－
+
+//使用@include name()调用
+
+//按钮hover透明度
+@mixin btn01Hover(){
+  &:hover{opacity:0.8;-webkit-filter:opacity(.8);filter:alpha(opacity=80)}
+}
+
+//圆角
+@mixin border-radius0($radius:3px){
+    border-radius:$radius;
+    -moz-border-radius:$radius;
+    -webkit-border-radius:$radius;
+}
+
+@mixin border-radius($radius...){
+    border-radius:$radius;
+    -moz-border-radius:$radius;
+    -webkit-border-radius:$radius;
+}
+
+
+//1px边框处理
+@mixin border-handle{
+  position: absolute;
+  top:0;
+  left:0;
+  content: '';
+  z-index:0;
+  width:200%;
+  height:200%;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin:0 0;
+  transform:scale(0.5);
+  transform-origin:0 0;
+}
+
+
+//0.5像素边框
+.border-05{border: none;}
+.border-05:before{
+  position: absolute;
+  top:0;
+  left:0;
+  content: '';
+  z-index: -999;
+  width:200%;
+  height:200%;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin:0 0;
+  transform:scale(0.5);
+  transform-origin:0 0;
+  border-width:1px !important;
+  border-style: solid;
+  border-color:$gray;
+}
+.border-05.bt-no:before{
+  border-bottom:none;
+}
+//@mixin区－－－－－－－－－－end
+

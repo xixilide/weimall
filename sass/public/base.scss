@@ -1,0 +1,183 @@
+@import "var";
+//编写样式请加前缀 #{$fnt}
+/***文字大小***/
+$fontsz-le:length($fontsz);
+@for $i from 1 to $fontsz-le+1{
+  .#{$fnt}-fsz#{$i}{font-size:nth($fontsz,$i);}
+}
+//字号
+@for $i from 12 to 60{
+  .#{$fnt}-fs#{$i}{font-size:pxTorem($i);}
+}
+/***文字大小 end***/
+
+/***宽高***/
+.#{$fnt}-w{width:$width-w;}
+.#{$fnt}-h{height:$height-h;}
+@for $i from 0 to 200{
+  .#{$fnt}-w#{$i}{
+    width: pxTorem($i);
+  }
+  .#{$fnt}-h#{$i}{
+    height: pxTorem($i);
+  }
+}
+
+/*百分比宽度*/
+@for $i from 1 to 11{
+    .#{$fnt}-w-#{$i*10}{
+        width: percentage($i/10);
+    }
+}
+.#{$fnt}-h-100{
+    height: 100%;
+}
+/***宽高 end***/
+/***间距***/
+@for $i from 0 to 101{
+  .#{$fnt}-m#{$i}{
+    margin:pxTorem($i);
+  }
+  .#{$fnt}-mt#{$i}{
+    margin-top:pxTorem($i);
+  }
+  .#{$fnt}-mb#{$i}{
+    margin-bottom:pxTorem($i);
+  }
+  .#{$fnt}-ml#{$i}{
+    margin-left:pxTorem($i);
+  }
+  .#{$fnt}-mr#{$i}{
+    margin-right:pxTorem($i);
+  }
+  .#{$fnt}-p#{$i}{
+    padding:pxTorem($i);
+  }
+  .#{$fnt}-pt#{$i}{
+    padding-top:pxTorem($i);
+  }
+  .#{$fnt}-pb#{$i}{
+    padding-bottom:pxTorem($i);
+  }
+  .#{$fnt}-pl#{$i}{
+    padding-left:pxTorem($i);
+  }
+  .#{$fnt}-pr#{$i}{
+    padding-right:pxTorem($i);
+  }
+
+}
+/***间距 end***/
+/***线条***/
+@for $i from 0 to 11 {
+  .#{$fnt}-border#{$i}{
+    border:#{$i}px solid nth($gray,3);
+  }
+  .#{$fnt}-border-t#{$i}{
+    border-top:#{$i}px solid nth($gray,3);
+  }
+  .#{$fnt}-border-b#{$i}{
+    border-bottom:#{$i}px solid nth($gray,3);
+  }
+  .#{$fnt}-border-l#{$i}{
+    border-left:#{$i}px solid nth($gray,3);
+  }
+  .#{$fnt}-border-r#{$i}{
+    border-right:#{$i}px solid nth($gray,3);
+  }
+}
+.#{$fnt}-border-no{border: none;}
+.#{$fnt}-border-t-no{border-top: none;}
+.#{$fnt}-border-b-no{border-bottom: none;}
+.#{$fnt}-border-l-no{border-left: none;}
+.#{$fnt}-border-r-no{border-right: none;}
+/***线条 end***/
+/***颜色***/
+//红色
+$red-le:length($red);
+@for $i from 1 to $red-le+1 {
+  .#{$fnt}-red#{$i}{color:nth($red,$i);}
+  .#{$fnt}-border-red#{$i}{border-color:nth($red,$i);}
+  .#{$fnt}-background-red#{$i}{background-color:nth($red,$i);}
+}
+//灰色
+$gray-le:length($gray);
+@for $i from 1 to $gray-le+1 {
+  .#{$fnt}-gray#{$i}{color:nth($gray,$i);}
+  .#{$fnt}-border-gray#{$i}{border-color:nth($gray,$i);}
+  .#{$fnt}-background-gray#{$i}{background-color:nth($gray,$i);}
+}
+//黑色
+$black-le:length($black);
+@for $i from 1 to $black-le+1 {
+  .#{$fnt}-black#{$i}{color:nth($black,$i);}
+}
+//绿色
+$green-le:length($green);
+@for $i from 1 to $green-le+1 {
+  .#{$fnt}-green#{$i}{color:nth($green,$i);}
+}
+//其他色
+.#{$fnt}-white{color:$white;}
+.#{$fnt}-yellow{color:$yellow;}
+.#{$fnt}-border-yellow{border-color:$yellow;}
+.#{$fnt}-background-yellow{background-color:nth($yellow,1);}
+.#{$fnt}-blue{color:$blue;}
+.#{$fnt}-border-blue{border-color:$blue;}
+.#{$fnt}-background-blue{background-color:$blue;}
+.#{$fnt}-green{color:$green;}
+.#{$fnt}-border-green{border-color:$green;}
+.#{$fnt}-background-green{background-color:$green;}
+.#{$fnt}-orange{color:$orange;}
+.#{$fnt}-border-orange{border-color:$orange;}
+.#{$fnt}-background-orange{background-color:$orange;}
+.#{$fnt}-background-none{background:none;}
+/***颜色 end***/
+/***文字排版***/
+.#{$fnt}-fb{font-weight:bold;}
+.#{$fnt}-t2{text-indent:2em;}
+//下划线
+.#{$fnt}-underl{text-decoration:underline;}
+.#{$fnt}-underl-no{text-decoration:none;}
+///文字缩略不换行
+.#{$fnt}-txt-ellipsis{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+//自动换行
+.#{$fnt}-word-break{word-break: keep-all;word-wrap: break-word;}
+//强制不换行
+.#{$fnt}-space-no{white-space:nowrap;}
+.#{$fnt}-space{white-space:normal;}
+//行高
+$lineH-le:length($lineH);
+@for $i from 1 to $lineH-le+1 {
+.#{$fnt}-lh#{$i}{line-height:nth($lineH,$i);}
+}
+/***文字排版 end***/
+/***定位***/
+.#{$fnt}-tl{text-align: left;}
+.#{$fnt}-tc{text-align: center;}
+.#{$fnt}-tr{text-align: right;}
+.#{$fnt}-mc{margin-left:auto;margin-right:auto;}
+.#{$fnt}-fl{float: left;}
+.#{$fnt}-fr{float: right;}
+.#{$fnt}-cl{clear:both;}
+.#{$fnt}-cll{clear:left;}
+.#{$fnt}-clr{clear:right;}
+.#{$fnt}-vm{vertical-align:middle;}
+.#{$fnt}-vt{vertical-align:top;}
+.#{$fnt}-vb{vertical-align:bottom;}
+.#{$fnt}-pr{position:relative;}
+.#{$fnt}-pa{position:absolute;}
+.#{$fnt}-zoom{zoom:1;}
+.#{$fnt}-hidden-v{visibility:hidden;}
+.#{$fnt}-hidden-o{overflow:hidden;}
+.#{$fnt}-none{display: none;}
+.#{$fnt}-hide{display:none;}
+.#{$fnt}-inline{display: inline;}
+.#{$fnt}-inline-block{display: inline-block;}
+.#{$fnt}-block{display:block;}
+.#{$fnt}-inherit{display: inherit;}
+//清除内部浮动
+.#{$fnt}-clearfix::after{content:".";display:block;height: 0;clear:both;visibility:hidden;}
+.#{$fnt}-clearfix{display:inline-block;clear:both;}
+.#{$fnt}-clearfix{display:block;clear:both;}
+/***定位 end***/

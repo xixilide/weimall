@@ -1,0 +1,148 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-coupon{
+    margin: pxTorem(20);
+    height: pxTorem(230);
+    @include border-radius(6px);
+    background: #fbf6f6;
+    .content{
+        position: relative;
+        height: pxTorem(194);
+        .sum{
+          font-size: pxTorem(100);
+        }
+        .con{
+            position: absolute;
+            top:pxTorem(20);
+            right: pxTorem(110);
+            text-align: right;
+            .date{
+                position: absolute;
+                right:0;
+                top:pxTorem(120);
+                color: nth($gray,1);
+                font-size: pxTorem(20);
+                width: pxTorem(250);
+                text-align: right;
+            }
+          .text{
+            max-width:pxTorem(230);
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+            -webkit-line-clamp: 2; /** 显示的行数 **/
+            overflow: hidden;  /** 隐藏超出的内容 **/
+          }
+        }
+       .dotted-1{
+             width: 100%;
+             height: pxTorem(5);
+             margin-top: pxTorem(6);
+         }
+    }
+
+}
+.coupon-red{
+     border-bottom: 8px solid nth($red,5);
+     .dotted{
+          @include border-radius(6px 6px 0 0);
+          background: url(../../images/cou-1.jpg) repeat-x;
+          background-size: pxTorem(25) pxTorem(30);
+          height: pxTorem(30);
+     }
+     .content{
+         background:url(../../images/cou-2.jpg) no-repeat;
+         background-size: pxTorem(194) pxTorem(188);
+         .dotted-1{
+             background: url(../../images/cou-4.jpg) repeat-x;
+             background-size: pxTorem(10) pxTorem(5);
+         }
+         .text{color: nth($red,5);}
+     }
+     
+}
+.coupon-yellow{
+     border-bottom: 8px solid nth($yellow,2);
+     .dotted{
+          @include border-radius(6px 6px 0 0);
+          background: url(../../images/cou-5.jpg) repeat-x;
+          background-size: pxTorem(25) pxTorem(30);
+          height: pxTorem(30);
+     }
+     .content{
+         background:url(../../images/cou-7.jpg) no-repeat;
+         background-size: pxTorem(194) pxTorem(188);
+         .dotted-1{
+             background: url(../../images/cou-6.jpg) repeat-x;
+             background-size: pxTorem(10) pxTorem(5);
+         }
+         .text{color:nth($yellow,2);}
+     }
+     
+}
+.coupon-green{
+     border-bottom: 8px solid nth($green,2);
+     .dotted{
+          @include border-radius(6px 6px 0 0);
+          background: url(../../images/cou-8.jpg) repeat-x;
+          background-size: pxTorem(25) pxTorem(30);
+          height: pxTorem(30);
+     }
+     .content{
+         background:url(../../images/cou-10.jpg) no-repeat;
+         background-size: pxTorem(194) pxTorem(188);
+         .dotted-1{
+             background: url(../../images/cou-9.jpg) repeat-x;
+             background-size: pxTorem(10) pxTorem(5);
+         }
+         .text{color:nth($green,2);}
+     }
+     
+}
+.coupon-gray{
+    background: nth($gray,6);
+     border-bottom: 8px solid nth($gray,4);
+     .dotted{
+          @include border-radius(6px 6px 0 0);
+          background: url(../../images/cou-11.jpg) repeat-x;
+          background-size: pxTorem(25) pxTorem(30);
+          height: pxTorem(30);
+     }
+     .content{
+         background:url(../../images/cou-13.jpg) no-repeat;
+         background-size: pxTorem(194) pxTorem(188);
+         .dotted-1{
+             background: url(../../images/cou-12.jpg) repeat-x;
+             background-size: pxTorem(10) pxTorem(5);
+         }
+         .text{color:nth($gray,2);}
+     }
+     
+}
+.coupon-out{
+    background: nth($gray,6);
+     border-bottom: 8px solid nth($gray,4);
+     .dotted{
+          @include border-radius(6px 6px 0 0);
+          background: url(../../images/cou-11.jpg) repeat-x;
+          background-size: pxTorem(25) pxTorem(30);
+          height: pxTorem(30);
+     }
+     .content.been-used{
+       background:url(../../images/cou-15.png) no-repeat pxTorem(236) pxTorem(0) ;
+       background-size: pxTorem(136) pxTorem(136);
+     }
+     .content{
+         background:url(../../images/cou-14.jpg) no-repeat pxTorem(236) pxTorem(0) ;
+         background-size: pxTorem(136) pxTorem(136);
+         .dotted-1{
+             background: url(../../images/cou-12.jpg) repeat-x;
+             background-size: pxTorem(10) pxTorem(5);
+         }
+         .text{color:nth($gray,2);}
+     }
+     
+}

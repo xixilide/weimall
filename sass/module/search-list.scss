@@ -1,0 +1,47 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+
+
+.#{$fnt}-searchlist-box{
+    background: #fff;
+    height:pxTorem(80);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding:pxTorem(14) pxTorem(20) 0 pxTorem(20) ;
+    //标识
+    .search-logo{float:left; width:pxTorem(45) ;}
+    .search-logo .img{max-width: pxTorem(45) ;margin-top: pxTorem(6) ;}
+    //输入区
+    .search-content{position:relative;margin:0 pxTorem(77)  0 pxTorem(65) ;}
+    .search-content .img{position: absolute;width: pxTorem(32); left: 10px;top:6px;}
+    .search-input{
+        @include border-radius(pxTorem(28) );
+        display: inline-block;
+        text-indent: pxTorem(60) ;
+        width: 100%;
+        height: pxTorem(56) ;
+        font-size: pxTorem(22);
+        background: nth($gray,8);
+    }
+    //消息
+    .search-news{position:relative;float:right; width:pxTorem(57);height: pxTorem(36); }
+    .search-news .i-new{display: inline-block;width:pxTorem(36);height:pxTorem(36);
+        background:url(../../images/s-l-2.png) no-repeat center;background-size: pxTorem(32) pxTorem(32);}
+    .search-news .icon{display: inline-block;position: absolute;top:0;right: 4px; z-index: 99;width:pxTorem(12);height:pxTorem(12);
+        background:url(../../images/search-4.png) no-repeat center;background-size: pxTorem(10) pxTorem(10);}
+    .search-news .text{position: absolute;top:pxTorem(36);left:0;color: nth($gray,1);font-size: nth($fontrem,3);}
+
+}
+
+.#{$fnt}-searchlist-pos{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+}

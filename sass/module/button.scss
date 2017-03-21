@@ -1,0 +1,47 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+@mixin button($button-radius,$button-width,$button-height,$font,$bgcolor,$color,$border,$h-border,$h-color,$h-bgcolor){
+    @include border-radius($button-radius);
+    display: inline-block;
+    padding: 0 pxTorem(20);
+    min-width: $button-width;
+    height: $button-height;
+    line-height: $button-height;
+    text-align: center;
+    font-size:$font;
+    background: $bgcolor;
+    color: $color;
+    border: 1px solid $border;
+    cursor:pointer;
+    &:hover{
+        border:1px solid $h-border;
+        color: $h-color;
+        background:$h-bgcolor ;
+    }
+}
+.#{$fnt}-btn-default{
+   @include button(pxTorem(6),pxTorem(86),pxTorem(50),pxTorem(24),#fff,nth($gray,1),nth($gray,5),nth($gray,5),nth($gray,1),#fff);
+}
+.#{$fnt}-btn-default.active{ border: 1px solid nth($red,4);color: nth($red,4);}
+
+
+.#{$fnt}-btn-date{
+     @include button(pxTorem(6),pxTorem(200),pxTorem(80),pxTorem(26),nth($gray,8),nth($black,1),nth($gray,8),nth($gray,8),nth($black,1),#fff);
+}
+.#{$fnt}-btn-date.active{
+     border: 1px solid nth($red,4);color: nth($red,4);background: $white;
+}
+.#{$fnt}-btn-three{min-width: pxTorem(160);}
+
+.#{$fnt}-btn-gray{
+    @include button(pxTorem(5),pxTorem(120),pxTorem(60),pxTorem(24),nth($gray,8),nth($gray,3),nth($gray,8),nth($gray,6),nth($gray,3),nth($gray,6));
+}
+.#{$fnt}-btn-l-red4{
+     @include button(pxTorem(5),pxTorem(120),pxTorem(60),pxTorem(24),#fff,nth($red,4),nth($red,4),nth($red,4),#fff,nth($red,4));
+}
+
+.#{$fnt}-btn-clear{
+      @include button(pxTorem(6),pxTorem(160),pxTorem(50),pxTorem(24),#fff,nth($gray,3),nth($gray,3),nth($gray,3),#fff,nth($gray,3));
+}

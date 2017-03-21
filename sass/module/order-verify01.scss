@@ -1,0 +1,81 @@
+@import "../public/var.scss";
+/*订单确认模块*/
+.#{$fnt}-order-verify01.mt20{
+   margin-top:pxTorem(20);
+ }
+.#{$fnt}-order-verify01.mb50{
+  margin-bottom:pxTorem(50);
+}
+.#{$fnt}-order-verify01{
+  margin-bottom:pxTorem(20);
+  border-bottom:1px solid nth($gray,5);
+  border-top:1px solid nth($gray,5);
+  background: $white;
+  .item{
+    position: relative;
+    border-bottom: 1px solid nth($gray,8);
+    clear: both;
+    .content-box{
+      padding:0 pxTorem(20);
+      .content{
+        .s-txt-r{float: right;margin-right: pxTorem(40);color:nth($gray,3);font-size:pxTorem(26);}
+        height:pxTorem(100);
+        line-height: pxTorem(100);
+        .name,.val{
+          font-size:pxTorem(28);
+          color:$black0;
+        }
+        .name.c-red{
+          color:nth($red,3);
+          font-size:pxTorem(28);
+          .jia{
+            font-size:pxTorem(36);
+          }
+        }
+        .right-icon{
+          float: right;
+          width:pxTorem(21);
+          height:pxTorem(100);
+          line-height: pxTorem(100);
+          img{
+            width:pxTorem(21);
+            height:pxTorem(32);
+            vertical-align: middle;
+          }
+        }
+        .info-box.mr0{
+          margin-right:0;
+        }
+        .info-box{
+          float: right;
+          height:pxTorem(100);
+          line-height: pxTorem(100);
+          margin-right:pxTorem(30);
+          .info{
+            font-size:pxTorem(26);
+            color:nth($gray,1);
+          }
+          .info.c-red{
+            color:nth($red,3);
+          }
+        }
+        .remark-box{
+          padding:pxTorem(20) 0;
+          .remark{
+            height:pxTorem(60);
+            line-height: pxTorem(60);
+            padding-left:pxTorem(20);
+            border-radius: pxTorem(6);
+            color:nth($gray,3);
+            font-size:pxTorem(26);
+            background: nth($gray,8);
+          }
+        }
+      }
+    }
+  }
+  .item.bd-bt{
+    border-bottom:0;
+  }
+}
+/*订单确认模块--end--*/

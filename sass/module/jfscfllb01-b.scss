@@ -1,0 +1,18 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+
+//积分商城分类列表01
+
+.#{$fnt}-jfscfllb01-box{background-color: #fff;height: pxTorem(490);overflow: hidden;padding-bottom:pxTorem(10);
+  .a-b{display: block;height: pxTorem(80);line-height: pxTorem(80);font-size: nth($fontsz,8);position: relative;padding:0 pxTorem(20);
+    .s-txt{display:inline-block;}
+    .i-icon01{display:inline-block;background: url(../../images/icon/i-member-5.png) no-repeat center center;
+      height: inherit;width:pxTorem(16); position: absolute;right:pxTorem(20);background-size:pxTorem(16) pxTorem(28);}
+  }
+  //框架
+  .ul01-k{
+    .li-k{border-bottom:1px solid nth($gray,6);margin:0 pxTorem(20);}
+  }
+
+}

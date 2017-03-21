@@ -1,0 +1,25 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+@mixin label($label-radius,$label-width,$label-height,$font,$bgcolor,$color){
+    @include border-radius($label-radius);
+    display: inline-block;
+    width: $label-width;
+    height: $label-height;
+    line-height: $label-height;
+    text-align: center;
+    font-size:$font;
+    background: $bgcolor;
+    color: $color;
+  
+}
+.label{
+   @include label(pxTorem(6),pxTorem(128),pxTorem(36),pxTorem(22),nth($red,3),$white);
+}
+.lable-mem{
+    @include label(pxTorem(18),pxTorem(110),pxTorem(30),pxTorem(22),nth($red,6),$white);
+    line-height: pxTorem(30);
+}

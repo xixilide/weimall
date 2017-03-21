@@ -1,0 +1,33 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+//商品详情页nav
+.#{$fnt}-footer-nav01-spxqy-k{height:pxTorem(90);}
+.#{$fnt}-footer-nav01-spxqy{height: pxTorem(90);width: 100%;position: fixed;bottom:0;z-index: 99;border-top: 1px solid nth($gray,5);
+  background-color:$white;
+  .ul1-k{margin:0;height: inherit;
+    .li-k{float: left;height: inherit;width: 17%;text-align: center;
+      .nav-btn{display:block;color: nth($gray,1);text-align: center;height: inherit;
+        font-size:nth($fontrem,5);padding:pxTorem(8) 0 0 0;
+        .i-icon{display: block;font-size:nth($fontrem,15);}
+      }
+      .nav-btn.active{color: nth($red,4);}
+      .nav-btn2{height:pxTorem(90);display: block;line-height:pxTorem(90);color: $white;font-size:nth($fontrem,11);text-align: center;width: 100%;}
+      .nav-btn2.nav-btn-jrgwc{background-color:nth($red,4);}
+      .nav-btn2.nav-btn-qsg{background-color: nth($yellow1,2);}
+      .nav-btn2.bg-gray{background-color:nth($gray,11);}
+      
+    }
+    .li-k.fr{float:right;width: 33%;}
+
+  }
+
+}
+//无货提示
+.#{$fnt}-whts01-box{
+  position: fixed;bottom:pxTorem(92);height:pxTorem(60);line-height:pxTorem(60);font-size:nth($fontsz,8);
+  color: #d48201;background-color: #fbf1d6;border:1px solid #f0cd96;border-left:none;border-right:none;width: 100%;text-align: center;
+}
+

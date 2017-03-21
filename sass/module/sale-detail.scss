@@ -1,0 +1,39 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-saled-etail{
+    margin:pxTorem(10) 0;
+    border-top: 1px solid nth($gray,5);
+    background: #fff;
+    .item{
+        padding: 0 pxTorem(20);
+        border-bottom: 1px solid nth($gray,5);
+       line-height: pxTorem(100);
+      height: pxTorem(100);
+        .property{
+
+          font-size: pxTorem(28);
+        }
+        .text{
+            font-size: pxTorem(26);
+            color: nth($gray,1);
+        }
+       .time{
+            float: right;
+            font-size: pxTorem(22);
+            color: nth($gray,3);
+        }
+    }
+  .lih100{clear: both;
+    height: 100%;
+    .property{
+      display: inline-block;float: left;
+    }
+    .text{display: inline-block;float: left;padding-bottom:pxTorem(20);padding-top:pxTorem(28);width:76%;line-height: 180%;}
+  }
+
+   
+}

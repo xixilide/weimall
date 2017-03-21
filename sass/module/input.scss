@@ -1,0 +1,14 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-input-big{
+   line-height: pxTorem(100);
+   font-size: pxTorem(28);
+   
+}
+.#{$fnt}-input02-big{
+   height: pxTorem(48);
+   line-height: 100%;
+   font-size: pxTorem(28);
+}

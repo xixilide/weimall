@@ -1,0 +1,20 @@
+@import "../public/var.scss";
+/*关于模块*/
+.#{$fnt}-about-box01{
+  width:100%;
+  .logo-box{
+    padding-top:pxTorem(200);
+    text-align: center;
+    .img{
+      width:pxTorem(150);
+      height:pxTorem(150);
+    }
+  }
+  .dec-txt{
+    margin-top:pxTorem(40);
+    font-size:pxTorem(28);
+    color:nth($gray,1);
+    text-align: center;
+  }
+}
+/*关于模块--end--*/

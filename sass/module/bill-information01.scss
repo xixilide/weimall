@@ -1,0 +1,85 @@
+﻿@import "../public/var.scss";
+/*发票信息模块*/
+.#{$fnt}-bill-information01{
+  .pay-item.bt-no{
+    border-top:none;
+  }
+  .pay-item{
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    background: $white;
+    margin-bottom: pxTorem(20);
+    .pay-box{
+      padding:0 pxTorem(20);
+      .pay-content{
+        height:pxTorem(100);
+        line-height: pxTorem(100);
+        .txt{
+          font-size:pxTorem(28);
+          color:$black0;
+        }
+        .price-box{
+          float: right;
+          font-size:pxTorem(24);
+          color:nth($red,3);
+          .price{
+            font-size:pxTorem(30);
+          }
+        }
+      }
+      .pay-way{
+        margin-bottom: pxTorem(30);
+        .way{
+          display: inline-block;
+          padding:0 pxTorem(16);
+          height:pxTorem(50);
+          line-height: pxTorem(50);
+          text-align: center;
+          border-radius: pxTorem(6);
+          border:1px solid $gray0;
+          color:nth($gray,1);
+          margin-right:pxTorem(40);
+          font-size:pxTorem(24);
+        }
+        .way.active{
+          border:1px solid nth($red,4);
+          color:nth($red,4);
+        }
+      }
+      .remark-box{
+       margin-bottom:pxTorem(20);
+        .remark{
+          box-sizing: border-box;
+          display: block;
+          width:100%;
+          outline: none;
+          height:pxTorem(60);
+          line-height: pxTorem(60);
+          padding-left:pxTorem(20);
+          border-radius: pxTorem(6);
+          color:nth($gray,3);
+          font-size:pxTorem(26);
+          background: nth($gray,8);
+        }
+      }
+      .pay-way.another{
+        margin-bottom: 0;
+        .way{
+          width:auto;
+          padding:0 pxTorem(16);
+          margin-bottom: pxTorem(30);
+          font-size:pxTorem(24);
+        }
+      }
+      .delivery-time-box{
+        height:pxTorem(70);
+        line-height: pxTorem(70);
+        .name,.val{
+          color:$gray0;
+          font-size:pxTorem(22);
+        }
+      }
+    }
+  }
+}
+/*发票信息模块--end--*/

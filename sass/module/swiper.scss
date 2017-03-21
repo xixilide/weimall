@@ -1,0 +1,10 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-swiper{
+    height: pxTorem(750);background:$white;text-align:center;
+     .img{width: pxTorem(750);height: pxTorem(750);}
+}

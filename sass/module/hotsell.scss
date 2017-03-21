@@ -1,0 +1,26 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-hotsell-container{background: nth($gray,8);
+    .hotsellbox{width: 100%;}
+    .hotsellbox .content{position:relative;  width: 100%;background-color:$white;}
+    .hotsellbox .content .img{display:block;margin: 0 auto;width:100%; }
+    .hotsellbox .content .tip{position: absolute;z-index: 99;left: 0px; top: pxTorem(20) ;}
+    .hotsellbox .content .describe{
+        position: absolute;
+        top: 75%;
+        left:50%;
+        margin-left: pxTorem(-275) ;
+        margin-top: pxTorem(-90) ;
+        width: pxTorem(570) ;
+        height: pxTorem(180) ;
+        text-align: center;
+        background: rgba(255,255,255,0.8)
+    }
+    .hotsellbox + .hotsellbox{margin-top:6px;}
+    .hotsellbox .content .describe .title{font-size: pxTorem(32);margin-top: pxTorem(40);}
+    .hotsellbox .content .describe .price{font-size: pxTorem(28);margin-top: pxTorem(6);}
+}

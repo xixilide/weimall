@@ -1,0 +1,11 @@
+@import "../public/var.scss";
+/*加载更多模块*/
+.#{$fnt}-load01{
+  margin:pxTorem(30) 0;
+  text-align: center;
+  font-size:pxTorem(24);
+  a{
+    color:$gray0;
+  }
+}
+/*加载更多模块*/

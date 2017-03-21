@@ -1,0 +1,72 @@
+@import "../public/var.scss";
+/*支付订单模块*/
+.#{$fnt}-pay01.mt0{
+  margin-top:0;
+  border-top:none;
+}
+.#{$fnt}-pay01{
+  margin:pxTorem(20) 0;
+  border-top:1px solid nth($gray,5);
+  border-bottom:1px solid nth($gray,5);
+  background: $white;
+  .pay-item{
+    .pay-box{
+      padding:0 pxTorem(20);
+      .pay-content{
+        height:pxTorem(100);
+        line-height: pxTorem(100);
+        .txt{
+          font-size:pxTorem(28);
+          color:$black0;
+        }
+        .price-box{
+          float: right;
+          font-size:pxTorem(24);
+          color:nth($red,3);
+          .price{
+            font-size:pxTorem(30);
+          }
+        }
+        .apply-name{
+          font-size:pxTorem(28);
+          color:$black0;
+        }
+        .apply-val{
+          font-size:pxTorem(26);
+          color:nth($red,3);
+        }
+      }
+      .pay-way{
+        margin-bottom: pxTorem(30);
+        .way{
+          display: inline-block;
+          width:pxTorem(126);
+          height:pxTorem(50);
+          line-height: pxTorem(50);
+          text-align: center;
+          border-radius: pxTorem(6);
+          border:1px solid $gray0;
+          color:nth($gray,1);
+          margin-right:pxTorem(40);
+          font-size:pxTorem(24);
+        }
+        .way.active{
+          border:1px solid nth($red,4);
+          color:nth($red,4);
+        }
+      }
+      .delivery-time-box{
+        height:pxTorem(70);
+        line-height: pxTorem(70);
+        .name,.val{
+          color:$gray0;
+          font-size:pxTorem(22);
+        }
+      }
+    }
+  }
+  .pay-item.bd-bt{
+    border-bottom: 1px solid nth($gray,8);
+  }
+}
+/*支付订单模块--end--*/

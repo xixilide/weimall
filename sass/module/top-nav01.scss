@@ -1,0 +1,28 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+/*top-nav01*/
+.#{$fnt}-top-nav01.bd-b-ddd{
+  border-bottom:1px solid nth($gray,5);
+}
+.#{$fnt}-top-nav01{text-align: center;background-color:$white;line-height:pxTorem(88);height:pxTorem(88);
+  position: relative;
+  border-bottom:1px solid nth($gray,8);
+  a.btn01{display: inline-block;float:left;position: absolute;top: 0;left: 0;overflow: hidden;
+    color:$gray0;text-align: center;
+    height:pxTorem(88);width:pxTorem(75);line-height:pxTorem(88) ;
+    $img01:"../../images/icon/i-jt-r01.png";
+    background: url($img01) no-repeat center center;
+    background-size:pxTorem(20) pxTorem(36);
+  }
+  .s-txt{font-size:nth($fontrem,12);display: inline-block;}
+
+
+}
+//浮动框架
+.top-nav01-fixed-k{position:fixed;top:0;width: 100%;display: block;z-index: 99;}
+.top-nav01-h-k{min-height:pxTorem(89);}
+
+

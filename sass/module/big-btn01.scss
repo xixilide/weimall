@@ -1,0 +1,13 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-big-btn01{display:block;height: pxTorem(90);line-height: pxTorem(90);text-align: center;
+  font-size:pxTorem(32);color:#fff;background-color: nth($gray,3);border-radius: pxTorem(6);
+  cursor: pointer;}
+.#{$fnt}-big-btn01.big-btn01-red{background-color: nth($red,3);}
+.#{$fnt}-big-btn-radius0{display:block;height: pxTorem(90);line-height: pxTorem(90);text-align: center;
+  font-size:pxTorem(32);color:#fff;background-color: nth($red,3);
+  cursor: pointer;}
+.#{$fnt}-big-btn01.red-4{background-color: nth($red,4);height: pxTorem(70);line-height: pxTorem(70);}

@@ -1,0 +1,16 @@
+@import "../public/var.scss";
+/*提交评价按钮模块*/
+.#{$fnt}-submit-pj01{
+  display: block;
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  height:pxTorem(90);
+  text-align: center;
+  line-height: pxTorem(90);
+  color:$white;
+  font-size:pxTorem(32);
+  background: nth($red,3);
+}
+/*提交评价按钮模块--end--*/

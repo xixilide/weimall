@@ -1,0 +1,13 @@
+﻿@import "../public/var.scss";
+/*为你推荐模块*/
+.#{$fnt}-recommend-box01{
+  width:100%;
+  height:pxTorem(64);
+  line-height: pxTorem(64);
+  text-align: center;
+  .txt{
+    font-size:pxTorem(24);
+    color:nth($gray,1);
+  }
+}
+/*为你推荐模块--end--*/

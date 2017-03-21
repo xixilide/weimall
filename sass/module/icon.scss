@@ -1,0 +1,70 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+/*地址图标*/
+.#{$fnt}-icon-address{
+    display: inline-block;
+    width: pxTorem(26);
+    height: pxTorem(30);
+    background: url(../../images/icon/address-icon01.png) no-repeat;
+    background-size:pxTorem(26) pxTorem(30);
+    vertical-align: middle;
+}
+/*地址图标 end*/
+
+/***箭头图标组***/
+
+/*箭头图标*/
+.#{$fnt}-icon-arrow{
+    display: inline-block;
+    width:pxTorem(20);
+    height: pxTorem(30);
+    background: url(../../images/icon/i-member-5.png) no-repeat top right;
+    background-size:pxTorem(16) pxTorem(28);
+}
+/*箭头图标 end*/
+
+/*箭头图标居中*/
+.#{$fnt}-icon-arrow.middle,.#{$fnt}-icon-arrow-middle{
+    position: absolute;
+        top: 50%;
+        right: pxTorem(20);
+        margin-top: pxTorem(-14);
+}
+/*箭头图标居中end*/
+
+
+/*箭头图标展开*/
+.#{$fnt}-icon-arrow.true{
+    display: inline-block;
+    width:pxTorem(28);
+    height: pxTorem(16);
+    background: url(../../images/icon/i-member-15.png) no-repeat;
+    background-size:pxTorem(28) pxTorem(16);
+}
+/*箭头图标向上*/
+.#{$fnt}-icon-arrow.up{
+    display: inline-block;
+    width:pxTorem(28);
+    height: pxTorem(16);
+    background: url(../../images/icon/i-member-16.png) no-repeat;
+    background-size:pxTorem(28) pxTorem(16);
+}
+
+/*箭头图标展开end*/
+/*箭头图标展开居中*/
+.#{$fnt}-icon-arrow.true.middle,.#{$fnt}-icon-arrow.up.middle{
+    position: absolute;
+        top: 50%;
+        right: pxTorem(20);
+        margin-top: pxTorem(-8);
+}
+/*箭头图标展开居中end*/
+
+/*眼睛图标*/
+.#{$fnt}-icon-eye{display:inline-block;background: url(../../images/icon/i-xsyj01.png) no-repeat center center;
+      height:pxTorem(36);width:pxTorem(36);background-size:pxTorem(36)  pxTorem(36); overflow: hidden;position: absolute;right: 0;top: 0; }
+.#{$fnt}-icon-eye.i-true{background: url(../../images/icon/i-xsyj01-kj.png) no-repeat center center;background-size:pxTorem(36)  pxTorem(36);}
+

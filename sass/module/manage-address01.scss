@@ -1,0 +1,85 @@
+@import "../public/var.scss";
+/*管理地址模块*/
+.#{$fnt}-manage-address01{
+  margin-bottom:pxTorem(20);
+  border-bottom:1px solid nth($gray,5);
+  background: $white;
+  .item{
+    border-bottom: 1px solid nth($gray,8);
+    .content-box{
+      padding:0 pxTorem(20);
+      .content{
+        position: relative;
+        height:pxTorem(100);
+        line-height: pxTorem(100);
+        .choose{
+          position: absolute;
+          top:0;
+          left:pxTorem(130);
+          width:100%;
+          height:pxTorem(100);
+          opacity: 0;
+        }
+        .name,.val{
+          display: inline-block;
+        }
+        .name{
+          color:$black0;
+          font-size:pxTorem(28);
+        }
+        .val{
+          font-size:pxTorem(26);
+          color:nth($gray,1);
+        }
+        .right-icon{
+          float: right;
+          width:pxTorem(21);
+          height:pxTorem(100);
+          line-height: pxTorem(100);
+          img{
+            width:pxTorem(21);
+            height:pxTorem(32);
+            vertical-align: middle;
+          }
+        }
+        .ipt{
+          display: inline-block;
+          font-size:pxTorem(26);
+          color:$gray0;
+        }
+      }
+      .special{
+        min-height: pxTorem(100);
+       .name{
+         padding-top:pxTorem(38);
+         font-size:pxTorem(26);
+         color:$black0;
+       }
+        .ipt-box{
+          margin-left:pxTorem(120);
+          padding-top:pxTorem(38);
+          .ipt-txt{
+            padding-left:pxTorem(5);
+            margin-bottom:pxTorem(10);
+            padding-top:pxTorem(3);
+            width:100%;
+            font-size:pxTorem(26);
+            color:$gray0;
+            border:none;
+            outline: none;
+            overflow: hidden;
+            resize:none;
+          }
+        }
+      }
+    }
+  }
+  .item:last-child{
+    border-bottom: none;
+    }
+    
+  .item.bd-bt{
+    border-bottom:0;
+  }
+}
+/*管理地址模块--end--*/

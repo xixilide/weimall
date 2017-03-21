@@ -1,0 +1,17 @@
+﻿@import "../public/var.scss";
+/*页码模块*/
+.#{$fnt}-page-turning{
+  width:pxTorem(120);
+  height:pxTorem(35);
+  line-height:pxTorem(35);
+  text-align:center;
+  position:fixed;
+  bottom: pxTorem(15);
+  left:50%;
+  margin-left:-(pxTorem(60));
+  border-radius:pxTorem(20);
+  background: rgba(#000,0.4);
+  color:#fff;
+  font-size:pxTorem(22);
+}
+/*页码模块--end--*/

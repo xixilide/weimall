@@ -1,0 +1,111 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-deal-status{
+    margin:pxTorem(10) 0;
+    border-top: 1px solid nth($gray,5);
+    border-bottom: 1px solid nth($gray,5);
+    background: #fff;
+    .title{
+        height: pxTorem(86);
+        line-height:pxTorem(86);
+        border-bottom: 1px solid nth($gray,5);
+        .property{
+            margin-left: pxTorem(20);
+            font-size: pxTorem(28);
+        }
+       .tip{
+           font-size: pxTorem(22);
+            color: nth($gray,3);
+        }
+    }
+    .content{
+        padding: pxTorem(48) 0 pxTorem(80) 0;
+        margin: 0 pxTorem(20);
+        .status-item{
+            float: left;
+            width: 33.333%;
+            color: nth($gray,3);
+            .step{
+                width: 100%;
+                height: pxTorem(50);
+            }
+            .step-first{
+                background-position: 0 0;
+                background: url(../../images/icon/status-01.png) top center no-repeat;
+                background-size: pxTorem(50) pxTorem(50);
+            }
+            .step-first.true{
+                background: url(../../images/icon/status-02.png) top center no-repeat;
+                background-size: pxTorem(50) pxTorem(50);
+            }
+            .step-second{
+                background-position: 0 0;
+                background: url(../../images/icon/status-03.png) top center no-repeat;
+                background-size: pxTorem(50) pxTorem(50);
+            }
+            .step-second.true{
+                background: url(../../images/icon/status-04.png) top center no-repeat;
+                 background-size: pxTorem(50) pxTorem(50);
+            }
+            .step-third{
+                background-position: 0 0;
+                background: url(../../images/icon/status-05.png) top center no-repeat;
+                background-size: pxTorem(50) pxTorem(50);
+            }
+            .step-third.true{
+                background: url(../../images/icon/status-06.png) top center no-repeat;
+                 background-size: pxTorem(50) pxTorem(50);
+            }
+            .line{
+                position: relative;
+                width: 100%;
+                margin: pxTorem(30) 0;
+                border-top: 2px solid nth($gray,4);
+                .deal{
+                     position: absolute;
+                     top: 0;
+                     left: 50%;
+                     display: inline-block;
+                     width:pxTorem(28);
+                     height:pxTorem(28);
+                     margin: pxTorem(-18) 0 0 pxTorem(-14);
+                     background: url(../../images/icon/status-07.png)  no-repeat;
+                     background-size: pxTorem(28) pxTorem(28);
+                }
+               
+            }
+            .text{
+                width: 100%;
+                text-align: center;
+                font-size: pxTorem(22);
+            }
+        }
+         .status-item.true{
+             color: $black0;
+            .step-first{
+                background: url(../../images/icon/status-02.png) top center no-repeat;
+                background-size: pxTorem(50) pxTorem(50);
+            }
+           
+            .step-second{
+                background: url(../../images/icon/status-04.png) top center no-repeat;
+                background-size: pxTorem(50) pxTorem(50);
+            }
+            
+            .step-third{
+                background: url(../../images/icon/status-06.png) top center no-repeat;
+                background-size: pxTorem(50) pxTorem(50);
+            }
+            .line{
+                 .deal{
+                     background: url(../../images/icon/status-08.png)  no-repeat;
+                     background-size: pxTorem(28) pxTorem(28);
+                }
+            }
+         }
+    }
+}

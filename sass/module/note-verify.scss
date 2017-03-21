@@ -1,0 +1,18 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-noteverify{
+    float: right;
+    .udm-btn-gray{
+        display: none;
+    }
+}
+.#{$fnt}-noteverify.true{
+    .udm-btn-l-red4{
+        display: none;
+    }
+    .udm-btn-gray{
+        display: inline-block;
+    }
+}

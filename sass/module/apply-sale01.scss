@@ -1,0 +1,156 @@
+
+
+@import "../public/var.scss";
+/*申请售后模块*/
+.#{$fnt}-apply-sale01{
+  width:100%;
+  .content-box{
+    .sales-return{
+      background: $white;
+      height:pxTorem(140);
+      padding:0 pxTorem(20);
+      border-bottom: 1px solid nth($gray,8);
+      .btn-box{
+        padding-top:pxTorem(30);
+        .ml270{
+          margin-left:pxTorem(270);
+        }
+      }
+      .dec-txt{
+        font-size:pxTorem(24);
+        color:$gray0;
+        margin-top:pxTorem(26);
+      }
+    }
+    .reason-box{
+      background: $white;
+      height:pxTorem(100);
+      line-height: pxTorem(100);
+      padding:0 pxTorem(20);
+      border-bottom: 1px solid nth($gray,8);
+      position: relative;
+      .z-txt{
+        font-size:pxTorem(28);
+        color:$black0;
+      }
+      .right-icon{
+        float: right;
+        width:pxTorem(21);
+        height:pxTorem(100);
+        line-height: pxTorem(100);
+        background: url("../../images/icon/right-icon.png") no-repeat center center;
+        background-size: pxTorem(21) pxTorem(32);
+      }
+      .right-icon.active{
+        width:pxTorem(32);
+        background: url("../../images/icon/right-icon02.png") no-repeat center center;
+        background-size: pxTorem(32) pxTorem(21);
+      }
+      .price{
+        float: right;
+        font-size:pxTorem(26);
+        color:nth($gray,1);
+      }
+      .ipt{
+        float: right;
+        font-size:pxTorem(26);
+        color:nth($gray,1);
+        outline: none;
+        height:pxTorem(100);
+        line-height:pxTorem(100) ;
+        text-align: right;
+        width:85%;
+      }
+
+    }
+    .select-reason-box{
+        width:100%;
+        background: $white;
+        z-index: 9999;
+        .reason-item{
+          padding:0 pxTorem(20);
+          height:pxTorem(80);
+          line-height: pxTorem(80);
+          .z-box{
+            float: left;
+            height:pxTorem(80);
+            line-height: pxTorem(80);
+          }
+          .reason-txt{
+            margin-left:pxTorem(66);
+            font-size:pxTorem(26);
+            color:nth($gray,1);
+            vertical-align: middle;
+            border-bottom: 1px solid nth($gray,8);
+          }
+          
+          .reason-txt.active{
+            color:nth($red,3);
+          }
+        }
+         .reason-item:last-child{
+            .reason-txt{
+                border-bottom: none;
+            }  
+         }
+      }
+    .reason-box.last{
+      margin-bottom: 0;
+      border-bottom: 1px solid nth($gray,5);
+    }
+    .explain-box01{
+      background: $white;
+      margin-top:pxTorem(10);
+      border-top:1px solid nth($gray,5);
+      border-bottom:1px solid nth($gray,5);
+      .shuom-content.last{
+        border-bottom: none;
+      }
+      .shuom-content{
+        padding:0 pxTorem(20);
+        border-bottom: 1px solid nth($gray,8);
+        .z-txt{
+          font-size:pxTorem(28);
+          color:$black0;
+          margin:pxTorem(40) 0 pxTorem(20) 0;
+        }
+        .content{
+          margin-bottom:pxTorem(20);
+          padding:pxTorem(26) pxTorem(16) pxTorem(16) pxTorem(16);
+          background: nth($gray,10);
+          border-radius: pxTorem(6);
+          .write-txt{
+            width:100%;
+            height:pxTorem(100);
+            border:none;
+            outline: none;
+            font-size:pxTorem(26);
+            color:$gray0;
+            resize:none;
+            background: none;
+            &:focus{
+                color: $black0;
+            }
+          }
+        }
+        .sc-img-box01{
+          display: inline-block;
+          width:pxTorem(130);
+          height:pxTorem(130);
+          margin:pxTorem(20) 0;
+          border:1px solid nth($gray,5);
+          text-align: center;
+          line-height: pxTorem(130);
+          img{
+            width:pxTorem(70);
+            height:pxTorem(58);
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+}
+/*申请售后模块--end--*/
+

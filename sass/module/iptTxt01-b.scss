@@ -1,0 +1,22 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-iptTxt01-b{height: pxTorem(76);position: relative;line-height:pxTorem(76);
+
+  .s-bt{display: inline-block;width:pxTorem(50);height:pxTorem(76);outline:0px solid #ddd;position: absolute;left: 0;top: 0;
+    .i-icon{display:inline-block;width:inherit;height:inherit;}
+    .i-yhm01{background: url("../../images/icon/i-yhm01.png") no-repeat center center;background-size: pxTorem(30) pxTorem(36);}
+    .i-mm01{background: url("../../images/icon/i-mm01.png") no-repeat center center;background-size: pxTorem(30) pxTorem(40);}
+
+  }
+
+  .s-iptTxt{border-bottom:1px solid nth($gray,8);display:block;margin-left: pxTorem(80);position: relative;
+    input{font-size: nth($fontrem,10);height: pxTorem(76);width: 90%;}
+    .icon01{display:inline-block;background: url("../../images/icon/i-xsyj01.png") no-repeat center center;
+      height:pxTorem(76);width:pxTorem(40);background-size:pxTorem(36)  pxTorem(36); overflow: hidden;position: absolute;right: 0;top: 0; }
+    .icon01.i-true{background: url("../../images/icon/i-xsyj01-kj.png") no-repeat center center;background-size:pxTorem(36)  pxTorem(36);}
+  }
+}

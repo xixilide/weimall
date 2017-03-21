@@ -1,0 +1,49 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-tab-line{
+        background: $white;
+        height: pxTorem(80); 
+        line-height: pxTorem(80);
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      .item{ 
+            position: relative;
+            float: left;
+            width: 33.3333%;
+            text-align: center;
+            color: $black0;
+            font-size: pxTorem(26);
+            cursor: pointer;
+            &:before{
+              @include border-handle;
+              border-bottom: 1px solid nth($gray,5);  
+            }
+            
+        }
+        .item-four{
+            float: left;
+            width: 25%;
+            text-align: center;
+            color: $black0;
+            font-size: pxTorem(26);
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+      .item-five{
+           width: 20%;
+           border-bottom: 1px solid nth($gray,5);
+        }
+        .active{
+            color: nth($red,3);
+            border-bottom: 1px solid nth($red,3);
+        }
+    }
+.#{$fnt}-tab-100{padding: 0 0;}
+
+//浮动框架
+.#{$fnt}-tab-line-fixed{position: fixed;width: 100%;top:pxTorem(90);z-index: 98;}
+.tab-line-h-k{min-height: pxTorem(80);}

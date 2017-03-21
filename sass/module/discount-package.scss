@@ -1,0 +1,90 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-discount-package{
+     padding: 0 pxTorem(20);
+     background: $white;
+     .list{
+         .item{
+             padding:pxTorem(20) 0;
+             position: relative;
+            &:before{
+                @include border-handle;
+                border-bottom: 1px solid nth($gray,5);
+            }
+            .img-box{
+                float: left;
+                position: relative;
+                width: pxTorem(148); 
+                height:pxTorem(148);
+                &:before{
+                        @include border-handle;
+                        border: 1px solid nth($gray,5);
+                        border-radius:pxTorem(10);
+                    } 
+                 .img{
+                    width: pxTorem(146); 
+                    height:pxTorem(146);
+                    border-radius:pxTorem(10);
+                    }
+               }
+               .info{
+                   margin-left: pxTorem(178);
+                   .title{
+                       font-size: pxTorem(28);
+                       overflow: hidden;
+                       text-overflow: ellipsis;
+                       white-space: nowrap;
+                   }
+                   .spec{
+                       margin: pxTorem(20) 0;
+                       font-size: pxTorem(26);
+                       color: nth($gray,1);
+                   }
+                   .other{
+                       font-size: pxTorem(28);
+                   }
+                   .price{
+                       color: nth($red,3);
+                   }
+                   .num{
+                        float: right;
+                        color: nth($gray,1);
+                   }
+               }
+            }
+               
+         }
+     .total{
+        padding-bottom: pxTorem(30);
+         .content{
+             height:pxTorem(100);
+             line-height:pxTorem(100);
+             .package{
+                 font-size: pxTorem(24);
+                 .rmb{
+                    font-size: pxTorem(24);
+                     color: nth($red,3); 
+                 }
+                 .price{
+                     font-size: pxTorem(32);
+                }
+              }
+              .cost{
+                     margin-left: pxTorem(20);
+                     font-size: pxTorem(24);
+                     color: nth($gray,1);
+                     text-decoration: line-through;
+                 }
+                 .save{
+                     float: right;
+                     font-size: pxTorem(28);
+                     color: nth($red,4);
+                 }
+             }
+             
+         
+      }
+     }
+

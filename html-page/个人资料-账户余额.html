@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="udm-html" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+  <!--WebApp全屏模式-->
+  <!--<meta name="viewport" content="width=750,initial-scale=0.5,maximum-scale=0.5">-->
+  <link rel="stylesheet" href="../sass/module/myAccount.scss">
+  <link rel="stylesheet" href="../sass/style/udm-style.css">
+
+  <title></title>
+  <script type="text/javascript" src="../script/rem-pmsp.js">
+
+  </script>
+</head>
+
+<body class="udm_page b-color1">
+  <div class="udm-top-nav01">
+    <a id="backClick" class="btn01" data-bind="click: backClick"></a>
+    <span class="s-txt">账户余额</span>
+  </div>
+  <div id="container">
+    <!--账户余额中心头部开始-->
+    <div class="udm-member-top udm-clearfix" style="height:6rem;">
+      <div class="udm-acc">
+      <p style="  margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-top: .8rem;
+        font-size: 0.5rem;" >账户余额（元）</p>
+      <p class="mem-num1" >18000.00</p>
+      </div>
+    </div>
+    <!--账户余额中心头部结束-->
+
+    <!--订单开始-->
+    <div class="udm-member-order udm-mt20">
+      <div class="udm-order">
+          <div class="udm-order-tit">
+              收支明细
+          </div>
+          <ul class="udm-orderlist">
+            <li>
+              <div class="order-left">
+                <span class="udm-fo n1">奖励</span>
+                <span class="udm-fo n2">余额1800.00元</span>
+              </div>
+              <div class="order-right" style="text-align: right;
+      padding-right: .8rem;">
+                <span class="udm-fo n3">+100.00</span>
+                <span class="udm-fo n4">2016-9-7 14:33:00</span>
+              </div>
+            </li>
+            <li>
+              <div class="order-left">
+                <span class="udm-fo n1">奖励</span>
+                <span class="udm-fo n2">余额1700.00元</span>
+              </div>
+              <div class="order-right" style="text-align: right;
+      padding-right: .8rem;">
+                <span class="udm-fo n3">+100.00</span>
+                <span class="udm-fo n4">2016-9-7 14:33:00</span>
+                  <span class="udm-fo n5">CD123456</span>
+              </div>
+            </li>
+            <li>
+              <div class="order-left">
+                <span class="udm-fo n1">提现</span>
+                <span class="udm-fo n2">余额1700.00元</span>
+              </div>
+              <div class="order-right" style="text-align: right;
+      padding-right: .8rem;">
+                <span class="udm-fo c-red">-600.00</span>
+                <span class="udm-fo n4">2016-9-7 14:33:00</span>
+                <span class="udm-fo n5">实际支付:500.00</span>
+              </div>
+            </li>
+            <li>
+              <div class="order-left">
+                <span class="udm-fo n1">充值</span>
+                <span class="udm-fo n2">余额1800.00元</span>
+              </div>
+              <div class="order-right" style="text-align: right;
+      padding-right: .8rem;">
+                <span class="udm-fo n3">+200.00</span>
+                <span class="udm-fo n4">2016-9-7 14:33:00</span>
+                <span class="udm-fo n5">实际支付:100.00</span>
+              </div>
+            </li>
+          </ul>
+       </div>
+    </div>
+    <!--订单结束-->
+
+  </div>
+
+</body>
+</html>

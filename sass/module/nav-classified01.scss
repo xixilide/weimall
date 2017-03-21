@@ -1,0 +1,55 @@
+﻿@import "../public/var.scss";
+/*导航栏信息功能模块*/
+.#{$fnt}-nav-classified01{
+  background: $white;
+  height:pxTorem(80);
+  margin-top:1px;
+  width:100%;
+  .nav-classified01-box{
+    padding:0 pxTorem(90);
+    .func{
+      width:33.33%;
+      height:pxTorem(80);
+      line-height: pxTorem(80);
+      color:#333;
+      float: left;
+      text-align:center;
+      .title{
+        color:$black0;
+        font-size: nth($fontsz,9);
+      }
+      .title.active{
+        color:nth($red,3);
+      }
+    }
+    .comprehensive-ranking{
+      text-align: left;
+    }
+    .price{
+      text-align: right;
+      position: relative;
+      .title{
+        padding-right:pxTorem(20);
+      }
+      .price-icon{
+        position: absolute;
+        top:pxTorem(32);
+        right:0;
+        width:pxTorem(12);
+        height:pxTorem(20);
+        .icon-top,.icon-bottom{
+          display: block;
+          height:pxTorem(8);
+          img{width:100%;vertical-align: top;}
+        }
+        .icon-top{
+          margin-bottom:pxTorem(2);
+        }
+        .icon-bottom{
+          margin-top:pxTorem(2);
+        }
+      }
+    }
+  }
+}
+/*导航栏信息功能模块--end--*/

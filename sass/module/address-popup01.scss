@@ -1,0 +1,88 @@
+@import "../public/var.scss";
+/*地址弹出模块*/
+.#{$fnt}-address-popup01{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100%;
+  background: $white;
+  .tc{
+    height:pxTorem(70);
+    line-height: pxTorem(70);
+    text-align: right;
+    padding-right:pxTorem(30);
+    border-bottom: 1px solid $gray0;
+    .over{
+      font-size:pxTorem(26);
+      color:nth($red,3);
+    }
+  }
+  .address-select-box{
+    margin:pxTorem(160) 0;
+    height:pxTorem(80);
+    border-top:1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    .province-box,.city-box,.county-box{
+      float: left;
+      width:33.33%;
+      height:pxTorem(80);
+      line-height: pxTorem(80);
+      text-align: center;
+    }
+    .province-box{
+      .content-box{
+        position: relative;
+        display: inline-block;
+        width:pxTorem(130);
+        height:pxTorem(80);
+        .list{
+          position: absolute;
+          left:0;
+          top:-(pxTorem(80));
+          .item{
+            height:pxTorem(80);
+            font-size:pxTorem(30);
+            color:$black0;
+          }
+        }
+      }
+    }
+    .city-box{
+      .content-box{
+        position: relative;
+        display: inline-block;
+        width:pxTorem(130);
+        height:pxTorem(80);
+        .list{
+          position: absolute;
+          left:0;
+          top:0;
+          .item{
+            height:pxTorem(80);
+            font-size:pxTorem(30);
+            color:$black0;
+          }
+        }
+      }
+    }
+    .county-box{
+      .content-box{
+        position: relative;
+        display: inline-block;
+        width:pxTorem(130);
+        height:pxTorem(80);
+        .list{
+          position: absolute;
+          left:0;
+          top:0;
+          .item{
+            height:pxTorem(80);
+            font-size:pxTorem(30);
+            color:$black0;
+          }
+        }
+      }
+    }
+  }
+}
+/*地址弹出模块--end--*/

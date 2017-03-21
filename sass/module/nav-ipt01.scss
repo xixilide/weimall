@@ -1,0 +1,96 @@
+﻿@import "../public/var.scss";
+/*导航搜索模块*/
+.#{$fnt}-nav-ipt01.bd-b{ border-bottom: 1px solid nth($gray,8);}  //底线为背景色
+.#{$fnt}-nav-ipt01.bd-no{ border-bottom:none;}  //底线没有
+.#{$fnt}-nav-ipt01{
+  border-top:1px solid nth($gray,5);
+  border-bottom:1px solid nth($gray,5);
+  width:100%;
+  height:pxTorem(87);
+  background:$white;
+  position: relative;
+  .tab-box,.left-icon{
+    display:inline-block;
+    width:pxTorem(90);
+    height:pxTorem(87);
+    line-height:pxTorem(88);
+    text-align: center;
+    img{
+      width:pxTorem(20);
+      height:pxTorem(36);
+      vertical-align: middle;
+    }
+    .tab-icon{
+      width:pxTorem(36);
+      height:pxTorem(36);
+    }
+  }
+  .left-icon{
+    float: left;
+  }
+  .ipt-box{
+    margin:pxTorem(16) pxTorem(90);
+    height:pxTorem(56);
+    line-height: pxTorem(56);
+    background: nth($gray,8);
+    border-radius: pxTorem(28);
+    .ipt-icon{
+      display: inline-block;
+      width:pxTorem(32);
+      height:pxTorem(32);
+      margin-left:pxTorem(20);
+      img{width:100%;vertical-align: middle;}
+    }
+    .ipt{
+      display: inline-block;
+      width:80%;
+      height:pxTorem(32);
+      line-height: pxTorem(32);
+      background: none;
+      outline:none;
+      vertical-align: middle;
+      color:nth($gray,4);
+      font-size:pxTorem(22);
+    }
+    .ipt-black1{color:nth($black,1);}
+  }
+  .tab-box{
+    float: right;
+    .link{
+        display: inline-block;
+        margin-right: pxTorem(30);
+        color: nth($gray,1);
+        font-size: pxTorem(28);
+    }
+  }
+  //套餐列表
+  h2.title{
+    margin:0 pxTorem(90);
+    height:pxTorem(87);
+    line-height:pxTorem(87);
+    text-align: center;
+    font-size:pxTorem(32);
+    color:$black0;
+  }
+  //套餐列表--end--
+  //购物车
+  .txt-func{
+    float: right;
+    height:pxTorem(87);
+    line-height:pxTorem(88);
+    text-align: center;
+    padding-right:pxTorem(30);
+    font-size:pxTorem(26);
+    color:nth($gray,1);
+  }
+  //购物车--end--
+}
+//搜索历史页
+.#{$fnt}-nav-ipt01.nav-ipt02{
+  .ipt-box{
+    margin-left:pxTorem(20);
+    margin-right:pxTorem(100);
+  }
+}
+
+/*导航搜索模块--end--*/

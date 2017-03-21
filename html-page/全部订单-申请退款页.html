@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="udm-html" lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"><!--WebApp全屏模式--->
+    <title>申请退货</title>
+    <link rel="stylesheet" href="../sass/style/udm-style.css">
+    <script src="../script/lib/jquery-1.12.2.min.js"></script>
+</head>
+<body class="udm-page b-color1">
+    <!--导航搜索模块-->
+    <div class="udm-top-nav01">
+        <a class="btn01"></a>
+        <span class="s-txt">申请退货</span>
+    </div>
+    <!--导航搜索模块--end-->
+   <!-- 订单号开始-->
+   <div class="udm-return-number">
+   	    <span class="tip">您正在申请退款</span>
+   	    <span class="tip udm-ml5">订单号：<i class="num">BI201609128765589</i></span>
+   </div>
+   <!-- 订单号结束-->
+   <!--选择开始-->
+   <div class="udm-return-choose udm-mt20">
+   	   <div class="item udm-clearfix">
+   	   	    <div class="choose">
+   	   	    	 <a class="udm-check01ipt-btn checked"  ><input class="ipt-check" type="checkbox" checked="checked" ></a>
+   	   	    </div>
+   	   	    <div class="tip">
+   	   	    	<span class="udm-red3">无理由退货</span>
+   	   	    </div>
+   	   </div>
+   	   <div class="item udm-clearfix">
+   	   	    <div class="choose">
+   	   	    	 <a class="udm-check01ipt-btn"  ><input class="ipt-check" type="checkbox"  ></a>
+   	   	    </div>
+   	   	    <div class="tip">
+   	   	    	<span>有破损</span>
+   	   	    </div>
+   	   </div>
+   	   <div class="item udm-clearfix">
+   	   	    <div class="choose">
+   	   	    	 <a class="udm-check01ipt-btn"  ><input class="ipt-check" type="checkbox"  ></a>
+   	   	    </div>
+   	   	    <div class="tip">
+   	   	    	<span>尺码错误</span>
+   	   	    </div>
+   	   </div>
+   </div>
+   <!--  选择结束-->
+     <p class="pli-k udm-m20">
+          <a class="udm-big-btn01 big-btn01-red">提交</a>
+     </p>
+<script>
+        //checkbox选择js判断
+        $(function(){
+           $(".udm-check01ipt-btn").click(function(){
+               var $this=this;
+               var $check1 = $($this).children(".ipt-check");
+               if($check1.attr("checked")==undefined){
+                   $($this).addClass("checked");
+                   $check1.attr("checked",true);
+               }else{
+                   $($this).removeClass("checked");
+                   $check1.attr("checked",false);
+               }
+           });
+        });
+ </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@import "../public/var.scss";
+/*清空搜索历史模块*/
+.#{$fnt}-clear-history01{
+  margin-top:pxTorem(100);
+  text-align: center;
+  .clear-box{
+    display: inline-block;
+    height:pxTorem(50);
+    line-height: pxTorem(50);
+    border-radius: pxTorem(6);
+    border:1px solid nth($gray,3);
+    padding:0 pxTorem(60);
+    .txt{
+      font-size:pxTorem(24);
+      color:nth($gray,3);
+      vertical-align: middle;
+    }
+    img{
+      width:pxTorem(28);
+      height:pxTorem(28);
+      vertical-align: middle;
+      margin-right:pxTorem(20);
+    }
+  }
+}
+/*清空搜索历史模块--end--*/

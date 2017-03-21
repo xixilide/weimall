@@ -1,0 +1,30 @@
+@import "../public/var.scss";
+/*搜索历史模块*/
+.#{$fnt}-search-history01{
+  margin-top:pxTorem(10);
+  background: $white;
+  border-top:1px solid nth($gray,5);
+  border-bottom:1px solid nth($gray,5);
+  .title{
+    font-size:pxTorem(28);
+    color:$black0;
+    height:pxTorem(60);
+    line-height: pxTorem(60);
+    padding-left:pxTorem(20);
+    border-bottom: 1px solid nth($gray,8);
+  }
+  .search-item.last{
+    border-bottom: none;
+  }
+  .search-item{
+    padding-left:pxTorem(20);
+    border-bottom:1px solid nth($gray,8);
+    .search-content{
+      height:pxTorem(80);
+      line-height: pxTorem(80);
+      color:$gray0;
+      font-size:pxTorem(26);
+    }
+  }
+}
+/*搜索历史模块--end--*/

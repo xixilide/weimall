@@ -1,0 +1,42 @@
+@import "../public/var.scss";
+/*售后信息模块*/
+.#{$fnt}-after-sale01{
+  width:100%;
+  background:$white;
+  border-top:1px solid nth($gray,5);
+  border-bottom:1px solid nth($gray,5);
+  margin-top: pxTorem(10);
+  .content{
+    padding:pxTorem(30) pxTorem(20);
+    .infor-box.special{
+      font-size:pxTorem(28);
+    }
+    .infor-box{
+      margin-bottom: pxTorem(20);
+      color:nth($gray,1);
+      font-size:pxTorem(28);
+      .price{
+        float: right;
+      }
+      .pay-text{
+          font-size: pxTorem(30);
+          color: nth($black,1);
+      }
+      .pay-m{
+           font-size: pxTorem(32);
+           color: nth($red,3);
+      }
+      .z-txt{
+         color: nth($black,1);  
+      }
+    }
+    .infor-box.last{
+      margin-bottom: 0;
+    }
+    .infor-box.paybox{
+      margin-bottom: 0;
+      margin-top: pxTorem(60);
+    }
+  }
+}
+/*售后信息模块--end--*/

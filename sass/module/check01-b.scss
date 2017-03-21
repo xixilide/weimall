@@ -1,0 +1,35 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+//
+.#{$fnt}-check01-b{
+  $ck-icon01:"../../images/icon/i-check01.png";
+  .ck-btn{display:inline-block;margin-right: pxTorem(10);line-height:pxTorem(34);height: pxTorem(36);width: pxTorem(36);cursor: pointer;
+          vertical-align: middle;background: url($ck-icon01) no-repeat right pxTorem(-36);background-size: pxTorem(34) pxTorem(70);
+
+  .ipt-check{visibility: hidden;height: 1px;width: 1px;}
+  }
+  .ck-btn.true{background: url($ck-icon01) no-repeat right pxTorem(0);background-size: pxTorem(34) pxTorem(70);}
+
+  .s-t01{color:nth($gray,3);font-size:nth($fontrem,8);}
+}
+
+
+//input模拟//udm-heck01ipt-btn
+$ck-icon01:"../../images/icon/i-check01.png";
+.#{$fnt}-check01ipt-btn{
+  position: relative;
+  display:inline-block;line-height:pxTorem(34);height: pxTorem(36);width: pxTorem(38);cursor: pointer;
+  vertical-align: middle;background: url($ck-icon01) no-repeat right pxTorem(-36);background-size: pxTorem(34) pxTorem(70);
+  .ipt-check{visibility: hidden;position: absolute;top:0;left: 0;}
+}
+.#{$fnt}-check01ipt-btn.checked{background: url($ck-icon01) no-repeat 0 pxTorem(0);background-size: pxTorem(34) pxTorem(70);}
+
+//对勾图标
+.#{$fnt}-check01-dg{display:inline-block;line-height:pxTorem(34);height: pxTorem(36);width: pxTorem(38);cursor: pointer;
+  vertical-align: middle;background: url($ck-icon01) no-repeat right pxTorem(0);background-size: pxTorem(34) pxTorem(70);}
+.#{$fnt}-check01-dg.dg-none{display:none;}
+//性别选择
+.#{$fnt}-check01-dg.dg-xbxz01{float: right;margin-top: pxTorem(36);}

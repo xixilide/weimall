@@ -1,0 +1,47 @@
+//公共样式
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-package-list{
+    background: $white;
+      .item{
+           padding:pxTorem(20);
+           border-bottom: 1px solid nth($gray,8);
+           .img-box{
+               float: left;
+               margin-right: pxTorem(20);
+               width: pxTorem(170);
+               height: pxTorem(170);
+               line-height: pxTorem(170);
+               border: 1px solid nth($gray,6);
+               text-align: center;
+               .img{
+                   max-width: pxTorem(170);
+                   max-height:pxTorem(170);
+               }
+           }
+           .des-box{
+              .title{
+                  overflow: hidden;
+                  margin: pxTorem(20) 0;
+                  height: pxTorem(64);
+                  font-size: pxTorem(26);
+                  color: nth($black,1);
+                  line-height: pxTorem(32);
+              }
+               
+           }
+           .total{
+               margin-top: pxTorem(40);
+               line-height: pxTorem(30);
+               .count{
+               float: right;
+               color: nth($gray,3);
+               font-size: pxTorem(22);
+              }
+           } 
+
+      }
+}
+

@@ -1,0 +1,31 @@
+//公共样式--
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+//首页nav
+.#{$fnt}-footer-nav01-k{height:pxTorem(90);}
+.#{$fnt}-footer-nav01{height: pxTorem(90);width: 100%;position: fixed;bottom:0;z-index: 99;border-top:1px solid nth($gray,5);
+  background-color:$white;
+  .ul1-k{margin:0;height: inherit;
+    .li-k{float: left;height: inherit;width: 25%;
+      .nav-btn{display:block;color: nth($gray,1);text-align: center;height: inherit;
+        font-size:nth($fontrem,5);padding:pxTorem(8) 0 0 0;
+        .i-icon{display: block;font-size:nth($fontrem,15);}
+      }
+    }
+    //距离
+    .li-k.li-kf:first-child{}
+    .li-k.li-end{float:right;}
+    .li-k.li-k2{}
+    .li-k.li-k3{}
+    //active
+    .li-k.active{
+      .nav-btn{color: nth($red,4);
+      }
+    }
+
+  }
+
+}
+

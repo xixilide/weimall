@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="udm-html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"><!--WebApp全屏模式--->
+    <!--<meta name="viewport" content="width=750,initial-scale=0.5,maximum-scale=0.5">-->
+    <title></title>
+    <link rel="stylesheet" href="../sass/style/udm-style.css">
+    <link rel="stylesheet" href="../ifont/i-nav/iconfont.css">
+    <script src="../script/lib/jquery-1.12.2.min.js"></script>
+</head>
+<body class="udm-page b-color1">
+    <!--udm-top-nav01---->
+    <div class="udm-top-nav01">
+        <a class="btn01"></a>
+        <span class="s-txt">欢迎登录</span>
+    </div>
+    <!--udm-top-nav01 end---->
+
+
+<div class="udm-pr udm-mt50 ">
+    <!--信息弹出模块-->
+    <div class="udm-slide-news-tc" ><!--添加udm-hide类 隐藏弹窗信息---->
+        <i class="sj"></i>
+        <div class="news-box">
+            <ul class="news-list">
+                <li class="news-item">
+                    <img src="../images/slide-news-home.png" class="img">
+                    <span class="title">首页</span>
+                </li>
+                <li class="news-item">
+                    <img src="../images/slide-news-xx.png" class="img">
+                    <span class="title">消息</span>
+                </li>
+                <li class="news-item last">
+                    <img src="../images/slide-news-search.png" class="img">
+                    <span class="title">搜索</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--信息弹出模块--end-->
+</div>
+
+<div class="udm-cl"></div>
+
+<div class="udm-m20">
+<!--单选按钮模块-->
+<span class="udm-checkbox">
+    <input type="checkbox" id="checkbox_a1" class="check" checked="checked" /><label class="label" for="checkbox_a1"></label>
+</span>
+<!--单选按钮模块 end-->
+<!--单选按钮模块-->
+<span class="udm-checkbox">
+     <input type="checkbox" id="checkbox_a2" class="check"  /><label class="label" for="checkbox_a2"></label>
+<span class="udm-checkbox">
+<!--单选按钮模块 end-->
+</div>
+
+<div class="udm-m20">
+    <!--单选按钮模块-->
+    <div class="udm-radio-box01">
+        <a href="#" class="check true"><input class="ipt-check" type="checkbox" ></a>
+        <span class="txt">设为默认</span>
+    </div>
+    <!--单选按钮模块-->
+</div>
+
+<div class="udm-m20">
+    <!--udm-check01-b---->
+     <span class="udm-check01-b">
+            <a class="ck-btn true"><input class="ipt-check" type="checkbox"  checked="checked" ></a>
+            <span class="s-t01">同意商城用户注册协议</span>
+     </span>
+    <!--udm-check01-b end---->
+</div>
+
+<div class="udm-m20">
+    <!--udm-check01ipt-label---->
+    <a class="udm-check01ipt-btn checked"  ><input class="ipt-check" type="checkbox" checked="checked" ></a>
+    <!--udm-check01ipt-label end---->
+    <!--udm-check01ipt-label---->
+    <a class="udm-check01ipt-btn "  ><input class="ipt-check" type="checkbox"  ></a>
+    <!--udm-check01ipt-label end---->
+    <script>
+        //checkbox选择js判断
+        $(function(){
+           $(".udm-check01ipt-btn").click(function(){
+               var $this=this;
+               var $check1 = $($this).children(".ipt-check");
+               if($check1.attr("checked")==undefined){
+                   $($this).addClass("checked");
+                   $check1.attr("checked",true);
+               }else{
+                   $($this).removeClass("checked");
+                   $check1.attr("checked",false);
+               }
+           });
+        });
+    </script>
+</div>
+
+
+<div class="udm-m20">
+    <!--btn01--->
+    <a class="udm-big-btn01 ">确定</a>
+    <!--btn01 end--->
+</div>
+
+<div class="udm-m20">
+    <!--btn01--->
+    <a class="udm-big-btn01 big-btn01-red">下一步</a>
+    <!--btn01 end--->
+</div>
+
+<!--数量加减模块-->
+<div class="udm-quantity-count01 udm-m20">
+    <a class="jian btn">-</a>
+    <input type="text" class="ipt" value="1">
+    <a class="jia btn">+</a>
+    <div class="udm-cl"></div>
+</div>
+<!--数量加减模块--end-->
+<!--数量加减模块-->
+<div class="udm-quantity-count01 udm-m20">
+    <a class="jian btn no-ac">-</a>
+    <input type="text" class="ipt" value="0">
+    <a class="jia btn">+</a>
+    <div class="udm-cl"></div>
+</div>
+<!--数量加减模块--end-->
+<!--数量加减模块-->
+<div class="udm-quantity-count01 udm-m20 quantity-b-c666">
+    <a class="jian btn no-ac">-</a>
+    <input type="text" class="ipt" value="1">
+    <a class="jia btn">+</a>
+    <div class="udm-cl"></div>
+</div>
+<!--数量加减模块--end-->
+
+
+</body>
+</html>

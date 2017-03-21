@@ -1,0 +1,20 @@
+@import "../public/var.scss";
+/*新增地址按钮模块*/
+.#{$fnt}-new-address-btn01{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height:pxTorem(90);
+  background: nth($red,4);
+  text-align: center;
+  line-height: pxTorem(90);
+  .txt{
+    font-size:pxTorem(32);
+    color: $white;
+  }
+}
+//灰色按钮
+.#{$fnt}-new-address-btn01.btn01-gray{background:#999;}
+
+/*新增地址按钮模块--end--*/

@@ -1,0 +1,27 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-integral-lastlist{
+    margin-top: pxTorem(20);
+    border-top: 1px solid nth($gray,5);
+    border-bottom:1px solid nth($gray,5);
+    .item-list{
+        padding: pxTorem(40) pxTorem(20) pxTorem(34) pxTorem(20);
+        background: $white; 
+        margin-top: 1px;
+        &:first-child{
+            margin-top:0;
+        }
+        .des{
+            float: left;
+            line-height: pxTorem(36);
+        }
+        .scroe{
+            float: right;
+            margin-right: pxTorem(20);
+            line-height: pxTorem(108);
+        }
+    }
+}

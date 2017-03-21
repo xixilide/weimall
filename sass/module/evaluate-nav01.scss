@@ -1,0 +1,29 @@
+@import "../public/var.scss";
+/*评价导航模块*/
+.#{$fnt}-evaluate-nav01{
+  width:100%;
+  border-bottom: 1px solid nth($gray,5);
+  .evaluate-con{
+    padding:pxTorem(20) pxTorem(30);
+    background: $white;
+    .item{
+      float: left;
+      width:25%;
+      .txt-box{
+        display: inline-block;
+        color:$black0;
+        .name{
+          font-size:pxTorem(28);
+        }
+        .val{
+          font-size:pxTorem(26);
+          text-align: center;
+        }
+      }
+      .txt-box.active{
+        color:nth($red,3);
+      }
+    }
+  }
+}
+/*评价导航模块--end--*/

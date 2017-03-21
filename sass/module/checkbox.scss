@@ -1,0 +1,31 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+.#{$fnt}-checkbox{
+    display: inline-block;
+    .check{
+        display: none;
+    }
+   .check + .label {
+    display: inline-block;
+    position: relative;
+    width: pxTorem(36);
+    height: pxTorem(36);
+    background:url(../../images/icon/i-cgts02.png) no-repeat top left;
+    background-size:pxTorem(34) pxTorem(34) ;
+    vertical-align:middle;
+    }
+    .check:checked + .label:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background:url(../../images/icon/i-cgts01.png) no-repeat top left;
+        width: pxTorem(36);
+        height: pxTorem(36);
+        background-size:pxTorem(34) pxTorem(34);
+       
+    }
+}

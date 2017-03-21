@@ -1,0 +1,25 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-detailbox{position: relative;
+    .contoll-back,.contoll-more{position: absolute;top:pxTorem(30);}
+    //返回
+    .contoll-back{ left: pxTorem(20);height:pxTorem(50);width:pxTorem(50);display: inline-block;
+        a{display: inline-block;height: inherit;width: inherit;}
+        .img{display:inline-block;background: url(../../images/icon/i-detail-1.png) no-repeat top left;height: inherit;width: inherit;
+            background-size:pxTorem(46) pxTorem(46);}
+    }
+    //更多
+    .contoll-more{right: pxTorem(20);display: inline-block;height:pxTorem(50);width:pxTorem(50);
+        .a-more{
+            display: inline-block;height: inherit;width: inherit;
+            .img{display:inline-block;background: url(../../images/icon/i-detail-2.png) no-repeat top right;height: inherit;width: inherit;
+                background-size:pxTorem(46) pxTorem(46);}
+        }
+    }
+
+}
+

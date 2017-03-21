@@ -1,0 +1,31 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+
+
+.#{$fnt}-switch{
+    display: inline-block;
+   .switch{
+        display: inline-block;
+        width: pxTorem(100) ;
+        height: pxTorem(62);
+        background: url(../../images/icon/switch-1.png) no-repeat;
+        background-size: pxTorem(100) pxTorem(62);
+    }
+     .switch-do{
+         display: none;
+         width: pxTorem(100) ;
+         height: pxTorem(62);
+         background: url(../../images/icon/switch-2.png) no-repeat;
+        background-size: pxTorem(100) pxTorem(62);
+     }
+}
+.#{$fnt}-switch.true{
+    .switch{
+        display: none;
+    }
+     .switch-do{
+         display: inline-block;
+      }
+}

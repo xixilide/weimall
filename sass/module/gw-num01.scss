@@ -1,0 +1,27 @@
+@import "../public/var.scss";
+/*购物车数量模块*/
+.#{$fnt}-gw-num01{
+  position: relative;
+  .gw-num{
+    position: absolute;
+    top:0; left:50%;
+    min-width:pxTorem(16);
+    height:pxTorem(24);
+    line-height: pxTorem(24);
+    background:nth($red,3);
+    border-radius: pxTorem(16);
+    color:$white;
+    font-size:pxTorem(20);
+    display: none;
+    padding: 0px pxTorem(3) ;
+  }
+  .gw-num.show{
+    display: block;
+  }
+  .gw-num.another{
+    display: block;
+    width:pxTorem(34);
+    border-radius:pxTorem(12);
+  }
+}
+/*购物车数量模块--end--*/

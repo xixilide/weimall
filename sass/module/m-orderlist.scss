@@ -1,0 +1,68 @@
+//公共变量模块
+@import "../public/var.scss";
+//编写样式请加前缀 #{$fnt}
+//$fnt:udm;
+.#{$fnt}-m-orderlist{
+    width: 100%;
+    margin-top: pxTorem(10);
+    background: $white;
+    .list-header{
+       .line{
+           position: relative;
+       }
+        .line:before{
+            @include border-handle;
+            border-bottom:1px solid nth($gray,8);
+        }
+       padding:0 pxTorem(20);
+       line-height: pxTorem(65); 
+       text-align: left;
+        .time-box{
+            float: right;
+            font-size:pxTorem(22);
+            color:$gray0;
+        }
+    }
+    .content{
+        position: relative;
+        padding:pxTorem(30) pxTorem(20);
+        .list-detail{
+            width: 56%;
+            line-height:pxTorem(34);
+            .list-title{
+                max-height: pxTorem(68);
+                overflow: hidden;
+            }
+        }
+        .price{
+            position: absolute;
+            right: pxTorem(20);
+            top: pxTorem(26);
+            text-align: right;
+            line-height:pxTorem(38) ;
+           .num{
+               color:$black0;
+               font-size:pxTorem(24);
+           }
+        }
+
+    }
+    .pay{
+        border-bottom:1px solid nth($gray,5);
+         position: relative;
+         line-height: pxTorem(70);
+         height:pxTorem(70);
+         .unit-box{
+           display: inline-block;
+           color:$gray0;
+           font-size:pxTorem(24);
+         }
+         .sf-txt{
+           font-size:pxTorem(24);
+           color:$black0;
+         }
+       }
+}
+.#{$fnt}-m-orderlist:first-child{
+     margin-top: pxTorem(20);
+}
